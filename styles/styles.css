@@ -1,0 +1,86 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/rubik/rubik-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/rubik/rubik-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.page-header {
+  background-color: #ffe17f;
+}
+
+.navigation-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.service-link {
+font-family: "Raleway";
+font-size: 18px;
+font-weight: 800;
+line-height: 21px;
+text-transform: uppercase;
+text-decoration: none;
+color:rgba(0, 0, 0, 1);
+}
+
+.title-items {
+font-family: "Raleway";
+font-size: 50px;
+font-weight: 800;
+line-height: 50px;
+text-decoration: none;
+color: rgba(0, 0, 0, 1);
+}
+
+.title-paragraph {
+font-family: "Rubik";
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-decoration: none;
+color: rgba(68, 68, 68, 1);
+}
+
+.logo-footer-peacture {
+  fill: #FFC700;
+}
