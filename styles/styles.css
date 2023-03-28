@@ -42,6 +42,7 @@ body {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+  background-color: white;
 }
 
 .page-header {
@@ -81,6 +82,82 @@ text-decoration: none;
 color: rgba(68, 68, 68, 1);
 }
 
-.logo-footer-peacture {
-  fill: #FFC700;
+.advantages-title {
+font-family: "Rubik";
+font-size: 36px;
+font-weight: 400;
+line-height: 30px;
+}
+
+.product-link {
+font-family: "Raleway";
+font-size: 18px;
+font-weight: 800;
+line-height: 24px;
+text-decoration: none;
+color:rgba(0, 0, 0, 1);
+}
+
+.delivery-botton {
+font-family: "Rubik";
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+text-decoration: none;
+color: rgba(0, 0, 0, 1);
+}
+
+.contacts-phone {
+font-family: "Rubik";
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+color: rgba(68, 68, 68, 1);
+}
+
+.company-item {
+  color: rgba(255, 199, 0, 1);
+}
+
+.company-list span {
+font-family: "Rubik";
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+color: rgba(0, 0, 0, 1);
+}
+
+.help-link {
+font-family: "Raleway";
+font-size: 18px;
+font-weight: 800;
+line-height: 21px;
+text-decoration: none;
+color: rgba(0, 0, 0, 1);
+}
+
+.slider-peacture-bracelet,
+.slider-peacture-selfie {
+  display: none;
+}
+
+.guarantee,
+.credit {
+  display: none;
+}
+
+.page-footer {
+background-color: rgba(68, 68, 68, 1);
+}
+
+.footer-paragraph {
+font-family: "Rubik";
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+color: rgba(255, 255, 255, 1);
+}
+
+.help-link-footer {
+  color: rgba(255, 255, 255, 1);
 }
