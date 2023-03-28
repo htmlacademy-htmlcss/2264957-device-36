@@ -38,6 +38,11 @@ html {
 }
 
 body {
+  width: 1440px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -45,8 +50,14 @@ body {
   background-color: white;
 }
 
+/* Навигация */
 .page-header {
   background-color: #ffe17f;
+}
+
+.navigation {
+  width: 1040px;
+  margin: 0 auto;
 }
 
 .navigation-link {
@@ -54,65 +65,115 @@ body {
   text-decoration: none;
 }
 
-.service-link {
-font-family: "Raleway";
-font-size: 18px;
-font-weight: 800;
-line-height: 21px;
-text-transform: uppercase;
-text-decoration: none;
-color:rgba(0, 0, 0, 1);
+.navigation-top {
+  display: flex;
 }
 
+.search-form {
+  min-width: 517px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-enter {
+  min-width: 231px;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list {
+  min-width: 240px;
+  margin-left: auto;
+}
+
+.navigation-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-bottom {
+  display: flex;
+  min-width: 231px;
+}
+
+.navigation-service {
+  display: flex;
+  min-width: 471px;
+  margin-left: auto;
+}
+
+.service-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+}
+
+.page-container {
+  width: 1040px;
+  margin: 0 auto;
+}
+/* Слайдер */
+
+
+
 .title-items {
-font-family: "Raleway";
-font-size: 50px;
-font-weight: 800;
-line-height: 50px;
-text-decoration: none;
-color: rgba(0, 0, 0, 1);
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
 }
 
 .title-paragraph {
-font-family: "Rubik";
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-text-decoration: none;
-color: rgba(68, 68, 68, 1);
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-decoration: none;
+  color: rgba(68, 68, 68, 1);
 }
 
 .advantages-title {
-font-family: "Rubik";
-font-size: 36px;
-font-weight: 400;
-line-height: 30px;
+  font-family: "Rubik";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .product-link {
-font-family: "Raleway";
-font-size: 18px;
-font-weight: 800;
-line-height: 24px;
-text-decoration: none;
-color:rgba(0, 0, 0, 1);
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 24px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
 }
 
-.delivery-botton {
-font-family: "Rubik";
-font-size: 18px;
-font-weight: 700;
-line-height: 20px;
-text-decoration: none;
-color: rgba(0, 0, 0, 1);
+.delivery {
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.delivery-button {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
 }
 
 .contacts-phone {
-font-family: "Rubik";
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-color: rgba(68, 68, 68, 1);
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(68, 68, 68, 1);
 }
 
 .company-item {
@@ -120,20 +181,20 @@ color: rgba(68, 68, 68, 1);
 }
 
 .company-list span {
-font-family: "Rubik";
-font-size: 18px;
-font-weight: 700;
-line-height: 20px;
-color: rgba(0, 0, 0, 1);
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 1);
 }
 
 .help-link {
-font-family: "Raleway";
-font-size: 18px;
-font-weight: 800;
-line-height: 21px;
-text-decoration: none;
-color: rgba(0, 0, 0, 1);
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
 }
 
 .slider-peacture-bracelet,
@@ -147,15 +208,15 @@ color: rgba(0, 0, 0, 1);
 }
 
 .page-footer {
-background-color: rgba(68, 68, 68, 1);
+  background-color: rgba(68, 68, 68, 1);
 }
 
 .footer-paragraph {
-font-family: "Rubik";
-font-size: 16px;
-font-weight: 400;
-line-height: 20px;
-color: rgba(255, 255, 255, 1);
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
 }
 
 .help-link-footer {
