@@ -13,15 +13,15 @@
         <a class="logo-header" href="#">
           <img class="logo-header-peacture" src="images/logo-device.svg" width="145" height="36" alt="Логотип девайс.">
         </a>
+        <div class="navigation-top">
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
           <label class="visually-hidden" for="site-search">Search</label>
           <input class="input-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search">
           <button class="button-search" type="submit">Найти</button>
         </form>
         <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#">Войти</a>
-          </li>
+          <a class="navigation-enter" href="#">Войти</a>
+            <ul class="navigation-list">
           <li class="navigation-item">
             <a class="navigation-link" href="#">Сравнить</a>
           </li>
@@ -29,6 +29,8 @@
             <a class="navigation-link" href="#">Корзина</a>
           </li>
         </ul>
+      </div>
+      <div class="navigation-bottom">
         <button class="navigation-link" type="button">Каталог товаров</button>
         <ul class="navigation-service">
           <li class="navigation-service-item">
@@ -41,9 +43,11 @@
             <a class="service-link" href="#">Контакты</a>
           </li>
         </ul>
+      </div>
       </nav>
     </header>
       <main class="main-index">
+        <div class="page-container">
         <h1 class="visually-hidden">Продукция девайс</h1>
         <!-- Слайдер -->
         <h2 class="visually-hidden">Рекламный слайдер</h2>
@@ -200,7 +204,7 @@
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </section>
           <div class="delivery-rare">
-            <a class="delivery-botton" href="#">Доставим редкий товар под заказ</a>
+            <a class="delivery-button" href="#">Доставим редкий товар под заказ</a>
           </div>
           <!-- Контакты -->
           <section class="about-us">
@@ -240,6 +244,7 @@
             </form>
             <p class="title-paragraph">Это бесплатно</p>
           </section>
+        </div>
       </main>
       <!-- Подвал -->
       <footer class="page-footer">
