@@ -38,7 +38,6 @@ html {
 }
 
 body {
-  width: 1440px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -79,21 +78,28 @@ body {
   min-width: 231px;
   margin: 0;
   padding: 0;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
 }
 
-.navigation-list {
-  min-width: 240px;
-  margin-left: auto;
-}
 
 .navigation-list {
   display: flex;
-  margin: 0;
+  min-width: 240px;
+  margin-left: auto;
   padding: 0;
+  justify-content: flex-end;
+}
+
+.navigation-link-button {
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border: none;
 }
 
 .navigation-bottom {
   display: flex;
+  justify-content: center;
   min-width: 231px;
 }
 
@@ -101,6 +107,7 @@ body {
   display: flex;
   min-width: 471px;
   margin-left: auto;
+  justify-content: flex-end;
 }
 
 .service-link {
@@ -114,11 +121,22 @@ body {
 }
 
 .page-container {
-  width: 1040px;
+  width: 1160px;
   margin: 0 auto;
 }
-/* Слайдер */
 
+.navigation-item {
+  width: 105px;
+  list-style-type: none;
+}
+
+
+.navigation-service-item {
+  width: 127px;
+  list-style-type: none;
+}
+
+/* Слайдер */
 
 
 .title-items {
@@ -140,10 +158,14 @@ body {
 }
 
 .advantages-title {
-  font-family: "Rubik";
+  font-family: Rubik;
   font-size: 36px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.advantages-item {
+  list-style-type: none;
 }
 
 .product-link {
@@ -153,6 +175,43 @@ body {
   line-height: 24px;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+}
+
+.slider-description {
+  width: 560px;
+}
+
+.slider-wrapper {
+  display: flex;
+}
+
+/* Меню продукции */
+.product-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-item {
+  width: 160px;
+  list-style-type: none;
+}
+
+/* Сервис */
+
+.delivery-wrapper {
+  display: flex;
+}
+
+.delivery-list {
+  width: 287px;
+}
+
+.serice-menu {
+  width: 452px;
+}
+
+.button-service {
+  border: none;
 }
 
 .delivery {
@@ -166,6 +225,11 @@ body {
   line-height: 20px;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  text-align: center;
+}
+
+.delivery-item {
+  list-style-type: none;
 }
 
 .contacts-phone {
@@ -207,9 +271,33 @@ body {
   display: none;
 }
 
+.about-us {
+  width: 508.5px;
+}
+
+.contact {
+  width: 532px;
+}
+
+.contact-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Меню продукции */
+.subscribe-title {
+  width: 348px;
+}
+
+.subscribe-title-paragraph {
+  width: 560px;
+}
+
+/* подвал */
 .page-footer {
   background-color: rgba(68, 68, 68, 1);
 }
+
 
 .footer-paragraph {
   font-family: "Rubik";
@@ -221,4 +309,8 @@ body {
 
 .help-link-footer {
   color: rgba(255, 255, 255, 1);
+}
+
+.footer-item {
+  list-style-type: none;
 }

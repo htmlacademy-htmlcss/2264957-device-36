@@ -19,7 +19,6 @@
           <input class="input-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search">
           <button class="button-search" type="submit">Найти</button>
         </form>
-        <ul class="navigation-list">
           <a class="navigation-enter" href="#">Войти</a>
             <ul class="navigation-list">
           <li class="navigation-item">
@@ -31,7 +30,7 @@
         </ul>
       </div>
       <div class="navigation-bottom">
-        <button class="navigation-link" type="button">Каталог товаров</button>
+        <button class="navigation-link navigation-link-button" type="button">Каталог товаров</button>
         <ul class="navigation-service">
           <li class="navigation-service-item">
             <a class="service-link" href="#">Доставка</a>
@@ -52,25 +51,27 @@
         <!-- Слайдер -->
         <h2 class="visually-hidden">Рекламный слайдер</h2>
           <section class="gallery">
-            <h2 class="visually-hidden">Слайдер</h2>
+            <h3 class="visually-hidden">Слайдер</h3>
             <div class="slider-peacture slider-peacture-current">
               <img class="slider-image" src="images/slider-copter.jpg" width="560" height="560" alt="Квадрокоптер.">
               <section class="slider-description">
-                <h3 class="title-items">Порхает как бабочка, жарит как пчела!</h3>
+                <h2 class="visually-hidden">Список приемуществ</h2>
+                <p class="title-items">Порхает как бабочка, жарит как пчела!</p>
                 <p class="title-paragraph">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
                   замаскированным под стандартную
                   камеру.</p>
                 <a class="help-link" href="#">Подробнее</a>
               </section>
               <section class="advantages">
+                <h3 class="visually-hidden">Список приемуществ</h3>
                 <ul class="advantages-list">
                   <li class="advantages-item">
-                    <h4 class="advantages-title">800 м</h4>
-                    <p class="advantages-description">Дальность полета</p>
+                    <p class="advantages-title">800 м</p>
+                      <p class="title-paragraph">Дальность полета</p>
                   </li>
                   <li class="advantages-item">
-                    <h4 class="advantages-title">50 м</h4>
-                    <p class="advantages-description">Радиус поражения</p>
+                    <p class="advantages-title">50 м</p>
+                    <p class="title-paragraph">Радиус поражения</p>
                   </li>
                 </ul>
               </section>
@@ -79,15 +80,17 @@
               <img class="slider-image" src="images/slider-bracelet.jpg" width="560" height="560"
                 alt="Фитнес-браслет.">
               <section class="slider-description">
-                <h3 class="title-items">Худеем правильно!</h3>
+                <h3 class="visually-hidden">Список приемуществ</h3>
+                <p class="title-items">Худеем правильно!</p>
                 <p class="title-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
                   и соблюдать диету.</p>
                 <a class="help-link" href="#">Подробнее</a>
               </section>
               <section class="advantages">
+                <h3 class="visually-hidden">Список приемуществ</h3>
                 <ul class="advantages-list">
                   <li class="advantages-item">
-                    <h4 class="advantages-title">48 часов</h4>
+                    <p class="advantages-title">48 часов</p>
                     <p class="title-paragraph advantages-description">Без подзарядки</p>
                   </li>
                 </ul>
@@ -97,24 +100,26 @@
               <img class="slider-image" src="images/slider-selfie.jpg" width="560" height="560"
                 alt="Палка для селфи.">
               <section class="slider-description">
-                <h3 class="title-items">Делай селфи,
-                  как Бен Стиллер!</h3>
+                <h3 class="visually-hidden">Список приемуществ</h3>
+                <p class="title-items">Делай селфи,
+                  как Бен Стиллер!</p>
                 <p class="title-paragraph">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
                   Карл!) метров длиной и весом всего 5 кг.</p>
                 <a class="help-link" href="#">Подробнее</a>
               </section>
               <section class="advantages">
+                <h3 class="visually-hidden">Список приемуществ</h3>
                 <ul class="advantages-list">
                   <li class="advantages-item">
-                    <h4 class="advantages-title">8,5 м</h4>
+                    <p class="advantages-title">8,5 м</p>
                     <p class="title-paragraph advantages-description">Длина палки</p>
                   </li>
                   <li class="advantages-item">
-                    <h4 class="advantages-title">5 кг</h4>
+                    <p class="advantages-title">5 кг</p>
                     <p class="title-paragraph advantages-description">Вес палки</p>
                   </li>
                   <li class="advantages-item">
-                    <h4 class="advantages-title">Карбон</h4>
+                    <p class="advantages-title">Карбон</p>
                     <p class="title-paragraph advantages-description">Материал</p>
                   </li>
                 </ul>
@@ -144,6 +149,7 @@
               </li>
             </ul>
           </section>
+
           <!-- Меню товаров -->
           <section class="product">
             <h2 class="visually-hidden">Меню продукции девайс</h2>
@@ -171,42 +177,45 @@
             </ul>
           </section>
           <!-- Доставка -->
+          <div class="delivery-wrapper">
           <section class="delivery">
             <h2 class="visually-hidden">Меню доставки</h2>
             <ul class="delivery-list">
               <li class="delivery-item">
-                <button class="help-link button-service" type="button">Доставка.</button>
+                <button class="help-link button-service" type="button">Доставка</button>
                  </li>
               <li class="delivery-item">
-                <button class="help-link" type="button">Гарантия</button>
+                <button class="help-link button-service" type="button">Гарантия</button>
               </li>
               <li class="delivery-item">
-                <button class="help-link" type="button">Кредит</button>
+                <button class="help-link button-service" type="button">Кредит</button>
               </li>
             </ul>
           </section>
-          <section class="delivery">
+          <section class="delivery serice-menu">
             <h2 class="title-items">Доставка</h2>
             <p class="title-paragraph">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </section>
-          <section class="guarantee">
+          <section class="guarantee serice-menu">
             <h2 class="title-items">Гарантия</h2>
             <p class="title-paragraph">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </section>
-          <section class="credit">
+          <section class="credit serice-menu">
             <h2 class="title-items">Кредит</h2>
             <p class="title-paragraph">Мы с удовольствием доставим ваш товар прямо
               к вашему подъезду совершенно бесплатно! Ведь
               мы неплохо заработаем, поднимая его на ваш этаж.</p>
           </section>
+        </div>
           <div class="delivery-rare">
             <a class="delivery-button" href="#">Доставим редкий товар под заказ</a>
           </div>
           <!-- Контакты -->
+          <div class="contact-wrapper">
           <section class="about-us">
             <h2 class="title-items">О нас</h2>
             <p class="title-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
@@ -220,7 +229,7 @@
             </ul>
             <a class="help-link" href="#">Подробнее о нас</a>
           </section>
-          <section class="cotact">
+          <section class="contact">
             <h2 class="title-items">Контакты</h2>
             <p class="title-paragraph">Вы можете забрать товар сами, заехав в наш офис.
               Заодно сможете проверить работоспособность покупки.</p>
@@ -231,10 +240,11 @@
             <p class="title-paragraph">пн—пт: с 10:00 до 22:00 сб—вс: с 10:00 до 19:00</p>
             <a class="help-link" href="#">Напишите нам</a>
           </section>
+        </div>
           <!-- Подписаться -->
           <section class="subscribe">
-            <h2 class="title-items">Подпишитесь на рассылку</h2>
-            <p class="title-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
+            <h2 class="title-items subscribe-title">Подпишитесь на рассылку</h2>
+            <p class="title-paragraph subscribe-title-paragraph">Еженедельный дайджест с обзорами новинок, длительными тест-драйвами,
               распаковками, а также акции, спецпредложения и вот это вот всё.</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="visually-hidden" for="subscribe-email">mail.</label>
