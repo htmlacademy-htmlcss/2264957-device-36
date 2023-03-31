@@ -70,8 +70,7 @@ body {
 
 .search-form {
   min-width: 517px;
-  margin: 0;
-  padding: 0;
+  display: flex;
 }
 
 .navigation-enter {
@@ -80,13 +79,43 @@ body {
   padding: 0;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
+  margin-left: 26px;
 }
 
+.input-search {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  background-color: transparent;
+  min-width: 359px;
+  padding: 10px 48px;
+  border: 2px solid #000000;
+  border-radius: 50px 0px 0px 50px;
+}
+
+.button-search {
+  min-width: 160px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  background-color: transparent;
+  padding: 10px 56px;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.navigation-top {
+  padding-top: 30px;
+}
 
 .navigation-list {
   display: flex;
   min-width: 240px;
-  margin-left: auto;
+  margin: 0 0 0 auto;
   padding: 0;
   justify-content: flex-end;
 }
@@ -95,18 +124,21 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
+  background-color: transparent;
 }
 
 .navigation-bottom {
   display: flex;
   justify-content: center;
   min-width: 231px;
+  padding-top: 30px;
 }
 
 .navigation-service {
   display: flex;
   min-width: 471px;
-  margin-left: auto;
+  margin: 0 0 0 auto;
+  padding: 0;
   justify-content: flex-end;
 }
 
@@ -120,14 +152,11 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.page-container {
-  width: 1160px;
-  margin: 0 auto;
-}
 
 .navigation-item {
   width: 105px;
   list-style-type: none;
+  text-align: center;
 }
 
 
@@ -138,6 +167,10 @@ body {
 
 /* Слайдер */
 
+.main-index {
+  width: 1160px;
+  margin: 0 auto;
+}
 
 .title-items {
   font-family: "Raleway";
@@ -168,6 +201,11 @@ body {
   list-style-type: none;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
 .product-link {
   font-family: "Raleway";
   font-size: 18px;
@@ -185,10 +223,23 @@ body {
   display: flex;
 }
 
+.slider-peacture:not(.slider-peacture-current) {
+  display: none;
+}
+
+.slider-pagination {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
 /* Меню продукции */
 .product-list {
   display: flex;
   justify-content: space-between;
+  margin: 0;
+  padding: 0;
 }
 
 .product-item {
@@ -261,13 +312,7 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.slider-peacture-bracelet,
-.slider-peacture-selfie {
-  display: none;
-}
-
-.guarantee,
-.credit {
+.serice-menu:not(.serice-menu-current) {
   display: none;
 }
 
@@ -279,18 +324,53 @@ body {
   width: 532px;
 }
 
+.working-hours {
+  list-style-type: none;
+}
+
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-/* Меню продукции */
+/* Подписаться */
 .subscribe-title {
   width: 348px;
 }
 
 .subscribe-title-paragraph {
   width: 560px;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.field {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
+  background-color: transparent;
+  min-width: 557px;
+  padding: 16px 11px;
+  border: none;
+  border-bottom: 2px solid #C4C4C4;
+}
+
+.button-subscribe {
+  min-width: 175px;
+  font-family: Raleway;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-align: center;
+  background-color: transparent;
+  padding: 18px 39px;
+  border: 3px solid rgba(196, 196, 196, 1);
+  ;
 }
 
 /* подвал */
