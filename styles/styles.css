@@ -217,9 +217,10 @@ body {
 
 .slider-description {
   width: 560px;
+  padding-left: 40px;
 }
 
-.slider-wrapper {
+.slider-peacture {
   display: flex;
 }
 
@@ -228,6 +229,8 @@ body {
 }
 
 .slider-pagination {
+  display: flex;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -236,8 +239,9 @@ body {
 
 /* Меню продукции */
 .product-list {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 160px 160px 160px 160px 160px 160px;
+  column-gap: 40px;
   margin: 0;
   padding: 0;
 }
@@ -249,23 +253,25 @@ body {
 
 /* Сервис */
 
-.delivery-wrapper {
-  display: flex;
-}
 
 .delivery-list {
   width: 287px;
 }
 
-.serice-menu {
-  width: 452px;
+.service-menu {
+  min-width: 452px;
+  padding-left: 116px;
+}
+
+.service-paragraph {
+  min-width: 452px;
 }
 
 .button-service {
   border: none;
 }
 
-.delivery {
+.delivery-wrapper {
   background-color: rgba(240, 240, 240, 1);
 }
 
@@ -279,7 +285,12 @@ body {
   text-align: center;
 }
 
+.delivery-rare {
+  text-align: center;
+}
+
 .delivery-item {
+  display: flex;
   list-style-type: none;
 }
 
@@ -312,9 +323,11 @@ body {
   color: rgba(0, 0, 0, 1);
 }
 
-.serice-menu:not(.serice-menu-current) {
+.service-menu:not(.service-menu-current) {
   display: none;
 }
+
+/* Контакты */
 
 .about-us {
   width: 508.5px;
@@ -377,7 +390,55 @@ body {
 .page-footer {
   background-color: rgba(68, 68, 68, 1);
 }
+.footer-wrapper {
+  width: 1160px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 239px 444px 175px;
+  grid-template-rows: 36px 40px 40px;
+  column-gap: 116px;
+  row-gap: 62px;
+}
 
+.footer-social-list {
+  display: flex;
+list-style-type: none;
+}
+
+.footer-link {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.logo-footer-device {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.footer-address {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.footer-list {
+  display: flex;
+  margin: 0;
+}
+
+.phone-contact {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.footer-social {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.logo-footer-html {
+  grid-column: 3;
+  grid-row: 3;
+}
 
 .footer-paragraph {
   font-family: "Rubik";
@@ -389,6 +450,7 @@ body {
 
 .help-link-footer {
   color: rgba(255, 255, 255, 1);
+  min-width: 125px;
 }
 
 .footer-item {

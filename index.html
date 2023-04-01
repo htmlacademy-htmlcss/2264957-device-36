@@ -63,9 +63,6 @@
               замаскированным под стандартную
               камеру.</p>
             <a class="help-link" href="#">Подробнее</a>
-          </section>
-          <section class="advantages">
-            <h3 class="visually-hidden">Список приемуществ</h3>
             <ul class="advantages-list">
               <li class="advantages-item">
                 <p class="advantages-title">800 м</p>
@@ -86,9 +83,6 @@
             <p class="title-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
               и соблюдать диету.</p>
             <a class="help-link" href="#">Подробнее</a>
-          </section>
-          <section class="advantages">
-            <h3 class="visually-hidden">Список приемуществ</h3>
             <ul class="advantages-list">
               <li class="advantages-item">
                 <p class="advantages-title">48 часов</p>
@@ -106,9 +100,6 @@
             <p class="title-paragraph">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
               Карл!) метров длиной и весом всего 5 кг.</p>
             <a class="help-link" href="#">Подробнее</a>
-          </section>
-          <section class="advantages">
-            <h3 class="visually-hidden">Список приемуществ</h3>
             <ul class="advantages-list">
               <li class="advantages-item">
                 <p class="advantages-title">8,5 м</p>
@@ -149,7 +140,6 @@
           </li>
         </ul>
       </section>
-
       <!-- Меню товаров -->
       <section class="product">
         <h2 class="visually-hidden">Меню продукции девайс</h2>
@@ -178,36 +168,36 @@
       </section>
       <!-- Доставка -->
       <div class="delivery-wrapper">
-        <section class="delivery">
-          <h2 class="visually-hidden">Меню доставки</h2>
+        <section class="service">
+          <h2 class="visually-hidden">Услуги сервиса</h2>
           <ul class="delivery-list">
             <li class="delivery-item">
               <button class="help-link button-service" type="button">Доставка</button>
+              <div class="service-menu service-menu-current">
+              <h3 class="title-items">Доставка</h3>
+                <p class="title-paragraph service-paragraph">Мы с удовольствием доставим ваш товар прямо
+                  к вашему подъезду совершенно бесплатно! Ведь
+                  мы неплохо заработаем, поднимая его на ваш этаж.</p>
+                </div>
             </li>
             <li class="delivery-item">
               <button class="help-link button-service" type="button">Гарантия</button>
+              <div class="service-menu">
+              <h2 class="title-items">Гарантия</h2>
+              <p class="title-paragraph">Если из-за возгорания купленного у нас товара у вас
+                сгорит дом — не переживайте, мы выдадим вам новый.
+                Товар, не дом, конечно же.</p>
+              </div>
             </li>
             <li class="delivery-item">
               <button class="help-link button-service" type="button">Кредит</button>
-            </li>
-          </ul>
-        </section>
-        <section class="delivery serice-menu serice-menu-current">
-          <h2 class="title-items">Доставка</h2>
-          <p class="title-paragraph">Мы с удовольствием доставим ваш товар прямо
-            к вашему подъезду совершенно бесплатно! Ведь
-            мы неплохо заработаем, поднимая его на ваш этаж.</p>
-        </section>
-        <section class="guarantee serice-menu">
-          <h2 class="title-items">Гарантия</h2>
-          <p class="title-paragraph">Если из-за возгорания купленного у нас товара у вас
-            сгорит дом — не переживайте, мы выдадим вам новый.
-            Товар, не дом, конечно же.</p>
-        </section>
-        <section class="credit serice-menu">
-          <h2 class="title-items">Кредит</h2>
-          <p class="title-paragraph">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
-            наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              <div class="service-menu">
+              <h2 class="title-items">Кредит</h2>
+              <p class="title-paragraph">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
+                наиболее выгодные условия кредита. Выгодные для банка, разумеется.</p>
+              </div>
+        </li>
+        </ul>
         </section>
       </div>
       <div class="delivery-rare">
@@ -260,12 +250,13 @@
     </main>
     <!-- Подвал -->
     <footer class="page-footer">
-      <section class="footer-address">
-        <h2 class="visually-hidden">Адрес компании девайс</h2>
-        <a class="logo-footer" href="#">
+      <div class="footer-wrapper">
+        <a class="logo-footer-device" href="#">
           <img class="logo-footer-peacture" src="images/logo-device-yellow.svg" width="145" height="36"
             alt="Логотип девайс.">
         </a>
+      <section class="footer-address">
+        <h2 class="visually-hidden">Адрес компании девайс</h2>
         <address class="footer-paragraph">Санкт-Петербург, набережная
           реки Карповки, 5, литера П.</address>
       </section>
@@ -303,12 +294,14 @@
             <a class="footer-social-link" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
-            <a class="logo-footer" href="https://htmlacademy.ru">
-              <span class="visually-hidden">Логотип html academy</span>
-            </a>
-          </li>
+           </li>
         </ul>
       </section>
+      <a class="logo-footer-html" href="https://htmlacademy.ru">
+        <img src="images/logo-html-academy.svg" width="115" height="33" alt="Логотип html academy">
+        <span class="visually-hidden">Логотип html academy</span>
+      </a>
+    </div>
     </footer>
 
 
