@@ -38,7 +38,7 @@ html {
 }
 
 body {
-  min-width: 1200px;
+  min-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -354,8 +354,24 @@ body {
 }
 
 .help-link-slider {
-  display: block;
+  display: inline-block;
+  position: relative;
+  width: 220px;
+  text-align: center;
+  padding: 0 10px;
+}
 
+
+
+.help-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 8px;
+  background-color:rgba(255, 225, 127, 1);
+  left: 0;
+  top: 7px;
+  z-index: ;
 }
 
 .slider-description {
@@ -487,6 +503,7 @@ body {
 
 .product-link-vr::before {
   display: block;
+  position: relative;
   content: "";
   width: 160px;
   height: 160px;
@@ -495,6 +512,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   margin: 0 auto;
+  bottom: 32px;
 }
 
 .product-link-mono::before {
@@ -841,6 +859,8 @@ service-menu-guarantee::after {
 
 /* подвал */
 .page-footer {
+  width: 1440px;
+  margin: 0 auto;
   background-color: rgba(68, 68, 68, 1);
 }
 
@@ -869,6 +889,7 @@ service-menu-guarantee::after {
   margin: 0;
   justify-content: center;
   align-items: center;
+  padding-bottom: 61px;
 }
 
 .footer-link {
