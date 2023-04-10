@@ -38,7 +38,6 @@ html {
 }
 
 body {
-  min-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -186,19 +185,42 @@ body {
 }
 
 .navigation-link-button {
+  position: relative;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   border: none;
   background-color: transparent;
   margin: 0;
-  padding: 0;
+  padding: 15px 0;
+}
+
+.navigation-link-button::after {
+  position: absolute;
+  display: block;
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-image: url("../images/icons/plus-icon.svg");
+  background-position: center;
+  opacity: 0.3;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  left: 243px;
+  top: 0;
 }
 
 .navigation-bottom {
   display: flex;
   justify-content: center;
+  align-items: center;
   min-width: 231px;
-  padding-top: 30px;
+  padding: 30px 0 0 0;
+  margin: 0;
 }
 
 .navigation-service {
@@ -207,9 +229,12 @@ body {
   margin: 0 0 0 auto;
   padding: 0 0 30px 0;
   justify-content: end;
+  align-items: center;
+
 }
 
 .navigation-service-item {
+  display: block;
   text-align: end;
 }
 
@@ -265,10 +290,11 @@ body {
   display: block;
   content: "";
   background-image: url("../images/icons/add.svg");
-  height: 12px;
-  width: 10px;
+  height: 14px;
+  width: 16px;
   top: 14px;
   left: 0;
+  right: 12px;
   background-repeat: no-repeat;
 }
 
@@ -279,7 +305,7 @@ body {
   font-size: 14px;
   z-index: 2;
   top: 10px;
-  left: -20px;
+  left: -14px;
   height: 20px;
   padding: 5px;
   display: flex;
@@ -299,6 +325,7 @@ body {
 }
 
 .main-index {
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -361,17 +388,22 @@ body {
   padding: 0 10px;
 }
 
+.help-link {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 0;
+}
 
-
-.help-link::before {
+.help-link:not(.help-link-footer)::before {
   content: "";
   position: absolute;
   width: 100%;
   height: 8px;
-  background-color:rgba(255, 225, 127, 1);
+  background-color: rgba(255, 225, 127, 1);
   left: 0;
   top: 7px;
-  z-index: ;
+  z-index: -1;
 }
 
 .slider-description {
@@ -420,11 +452,25 @@ body {
   height: 60px;
   border: none;
   cursor: pointer;
-  background-image: url("../images/slider/arrow-right.svg");
+  background-image: url("../images/slider/arrows.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-color: #FFFFFF;
 }
+
+.slider-button:hover {
+  opacity: 0.6;
+}
+
+.slider-button:active {
+  opacity: 0.3;
+}
+
+.slider-button:focus {
+  outline-color: #AF4FFF;
+  outline-offset: 3px;
+}
+
 
 .slider-pagination-button {
   width: 12px;
@@ -626,6 +672,10 @@ body {
   top: 77.5px;
 }
 
+.service-menu-guarantee {
+  position: relative;
+}
+
 service-menu-guarantee::after {
   display: block;
   content: "";
@@ -636,6 +686,10 @@ service-menu-guarantee::after {
   background-repeat: no-repeat;
   right: 203px;
   top: 77.5px;
+}
+
+.service-menu-credit {
+  position: relative;
 }
 
 .service-menu-credit::after {
@@ -652,7 +706,9 @@ service-menu-guarantee::after {
 
 
 .button-service {
+  background-color: transparent;
   border: none;
+  width: 160px;
 }
 
 .service-item-guarantee {
@@ -700,7 +756,8 @@ service-menu-guarantee::after {
 
 .delivery-rare::after {
   position: absolute;
-  content: "i";
+  content: "";
+  background-image: url("../images/icons/i-icon.svg");
   background-position: center;
   background-color: rgba(220, 220, 220, 0.5);
   width: 40px;
@@ -708,6 +765,7 @@ service-menu-guarantee::after {
   border-radius: 50%;
   right: 42.5px;
   top: 30px;
+  background-repeat: no-repeat;
 }
 
 .service-item {
@@ -777,6 +835,18 @@ service-menu-guarantee::after {
   display: flex;
   justify-content: space-between;
   padding-bottom: 70px;
+}
+
+.help-link-about-us {
+
+  width: 270px;
+
+}
+
+.help-link-contacts {
+
+  width: 259px;
+
 
 }
 
@@ -855,6 +925,7 @@ service-menu-guarantee::after {
   width: 16px;
   bottom: 60px;
   right: 144px;
+  background-repeat: no-repeat;
 }
 
 /* подвал */
@@ -869,7 +940,7 @@ service-menu-guarantee::after {
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
-  column-gap: 116px;
+  column-gap: 62px;
   row-gap: 62px;
 }
 
@@ -922,6 +993,7 @@ service-menu-guarantee::after {
 }
 
 .footer-social {
+  position: relative;
   grid-column: 2;
   grid-row: 3;
 }
@@ -986,4 +1058,15 @@ service-menu-guarantee::after {
   top: 14px;
   left: 13px;
   fill: #444;
+}
+
+.footer-social::before {
+  display: block;
+  content: "";
+  position: absolute;
+  height: 7px;
+  width: 80px;
+  background-color: #FFC500;
+  left: -330px;
+  top: 15px;
 }
