@@ -58,7 +58,7 @@
       <!--Главный заголовок -->
       <h1 class="visually-hidden">Продукция девайс</h1>
       <!-- Слайдер -->
-      <section class="popular-goods">
+      <section class="popular-goods container">
         <div class="slider-wrapper">
         <h2 class="visually-hidden">Популярные товары</h2>
         <ul class="slaider-list">
@@ -73,10 +73,10 @@
                 замаскированным под стандартную
                 камеру.</p>
               <a class="help-link help-link-slider" href="#">Подробнее</a>
-              <p class="advantages-title advantages-description">800 м</p>
-              <p class="title-paragraph">Дальность полета</p>
-              <p class="advantages-title">50 м</p>
-              <p class="title-paragraph">Радиус поражения</p>
+            <div class="slider-advantages">
+              <p class="title-paragraph title-advantages"><b>800 м</b>Дальность полета</p>
+              <p class="title-paragraph title-advantages"><b>50 м</b>Радиус поражения</p>
+            </div>
             </div>
           </li>
       <li class="slider-peacture slider-peacture-bracelet">
@@ -89,8 +89,9 @@
           <p class="title-paragraph">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
             и соблюдать диету.</p>
           <a class="help-link help-link-slider" href="#">Подробнее</a>
-              <p class="advantages-title">48 часов</p>
-              <p class="title-paragraph advantages-description">Без подзарядки</p>
+          <div class="slider-advantages">
+              <p class="title-paragraph title-advantages"><b>48 часов</b>Без подзарядки</p>
+          </div>
         </div>
             </li>
       <li class="slider-peacture slider-peacture-selfie">
@@ -103,12 +104,11 @@
           <p class="title-paragraph">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
             Карл!) метров длиной и весом всего 5 кг.</p>
           <a class="help-link help-link-slider" href="#">Подробнее</a>
-              <p class="advantages-title">8,5 м</p>
-              <p class="title-paragraph advantages-description">Длина палки</p>
-              <p class="advantages-title">5 кг</p>
-              <p class="title-paragraph advantages-description">Вес палки</p>
-              <p class="advantages-title">Карбон</p>
-              <p class="title-paragraph advantages-description">Материал</p>
+              <div class="slider-advantages">
+                <p class="title-paragraph title-advantages"><b>8,5 м</b>Длина палки</p>
+                <p class="title-paragraph title-advantages"><b>5 кг</b>Вес палки</p>
+                <p class="title-paragraph title-advantages"><b>Карбон</b>Материал</p>
+              </div>
               </div>
             </li>
           </ul>
@@ -141,7 +141,7 @@
       </section>
 
       <!-- Меню товаров -->
-      <section class="product">
+      <section class="product container">
         <h2 class="visually-hidden">Меню продукции девайс</h2>
         <ul class="product-list">
           <li class="product-item">
@@ -171,8 +171,8 @@
         <article class="service">
           <h2 class="visually-hidden">Услуги сервиса</h2>
           <ul class="service-list">
-            <li class="service-item">
-              <button class="help-link button-service" type="button">Доставка</button>
+            <li class="service-item service-item-current">
+              <button class="help-link button-service button-service-current " type="button">Доставка</button>
             </li>
             <li class="service-item service-item-guarantee">
               <button class="help-link button-service" type="button">Гарантия</button>
@@ -202,11 +202,13 @@
           </ul>
         </article>
       </div>
-      <div class="delivery-rare">
+      <div class="container">
+      <div class="delivery-rare ">
         <a class="delivery-button" href="#">Доставим редкий товар под заказ</a>
       </div>
+    </div>
       <!-- Контакты -->
-      <div class="contact-wrapper">
+      <div class="contact-wrapper container">
         <section class="about-us">
           <h2 class="title-items">О нас</h2>
           <p class="title-paragraph">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из
@@ -254,7 +256,7 @@
     </main>
     <!-- Подвал -->
     <footer class="page-footer">
-      <div class="footer-wrapper">
+      <div class="footer-wrapper container">
         <a class="logo-footer-device" href="#">
           <img class="logo-footer-peacture" src="images/logo/logo-device-yellow.svg" width="145" height="36"
             alt="Логотип девайс.">
