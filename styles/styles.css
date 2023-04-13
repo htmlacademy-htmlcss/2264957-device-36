@@ -185,7 +185,7 @@ body {
 
 .navigation-list {
   display: flex;
-  min-width: 240px;
+  width: 240px;
   margin: 0 0 0 auto;
   padding: 0;
 }
@@ -256,7 +256,6 @@ body {
 
 
 .navigation-item {
-  width: 105px;
   list-style-type: none;
   text-align: center;
 }
@@ -337,7 +336,7 @@ body {
 /* Слайдер */
 
 .popular-goods {
-  background-image: linear-gradient(#FFE17F 134px, #ffff 134px, #ffff);
+  background-image: linear-gradient(#FFE17F 150px, #ffff 150px, #ffff);
   margin: 0 auto 70px auto;
 }
 
@@ -365,6 +364,17 @@ body {
   line-height: 30px;
   text-decoration: none;
   color: rgba(68, 68, 68, 1);
+  padding: 0;
+  margin: 0;
+}
+
+.title-items-slider {
+  margin-top: 16px;
+  margin-bottom: 29px;
+}
+
+.title-paragraph-slider {
+  margin-bottom: 50px;
 }
 
 
@@ -412,9 +422,10 @@ b {
 .help-link-slider {
   display: inline-block;
   position: relative;
-  width: 220px;
+  min-width: 220px;
+  width: fit-content;
   text-align: center;
-  padding: 0 10px;
+  padding: 10px 5px;
 }
 
 .help-link {
@@ -440,7 +451,8 @@ b {
   height: 8px;
   background-color: rgba(255, 225, 127, 1);
   left: 0;
-  top: 7px;
+  top: 50%;
+  transform: translateY(-50%);
   z-index: -1;
 }
 
@@ -555,10 +567,8 @@ b {
   font-size: 180px;
   line-height: 30px;
   color: #FFFFFF;
-  right: 60px;
-  top: 57px;
-  left: 895px;
-  bottom: 0;
+  right: 46px;
+  top: 75px;
   margin: 0;
 }
 
@@ -571,7 +581,7 @@ b {
 .product-list {
   display: grid;
   grid-template-columns: 160px 160px 160px 160px 160px 160px;
-  column-gap: 40px;
+  gap: 40px;
   margin: 0;
   padding: 0;
 }
@@ -647,18 +657,20 @@ b {
   opacity: 0.3;
 }
 
+.product-item:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
 
 /* Сервис */
 
 .service-wrapper {
-  position: relative;
   background-image: linear-gradient(#fff 104px, #F0F0F0 104px, #F0F0F0)
 }
 
 .service {
   position: relative;
   display: flex;
-  width: 1160px;
   margin: 0 auto;
 }
 
@@ -699,7 +711,7 @@ b {
   list-style-type: none;
 }
 
-.service-menu-current {}
+
 
 .service-menu-current::after {
   display: block;
@@ -749,7 +761,8 @@ b {
 .button-service {
   background-color: transparent;
   border: none;
-  width: 160px;
+  min-width: 160px;
+  width: fit-content;
 }
 
 
@@ -826,8 +839,17 @@ b {
 
 .service-item-current {
   background-color: #000000;
+}
+
+.service-item-current .help-link {
   color: #FFE17F;
 }
+
+.service-item-current .help-link::before {
+  display: none;
+}
+
+
 
 .contacts-phone {
   font-family: "Rubik";
@@ -892,16 +914,13 @@ b {
 }
 
 .help-link-about-us {
-
-  width: 270px;
-
+  min-width: 270px;
+  width: fit-content;
 }
 
 .help-link-contacts {
-
-  width: 259px;
-
-
+  min-width: 259px;
+  width: fit-content;
 }
 
 /* Подписаться */
@@ -1139,4 +1158,150 @@ b {
 
 .footer-social-link svg:active {
   opacity: 0.3;
+}
+
+.logo-html-academy {
+  width: 115px;
+  height: 33px;
+  fill: #FFC700;
+}
+
+.logo-html-academy:hover {
+  fill: #FFFFFF;
+}
+
+.logo-html-academy:active {
+  fill: #B6B4B5;
+}
+
+.logo-html-academy:focus svg {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+
+/* Модальное окно */
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(240, 240, 240, 0.9);
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  padding: 72px 80px;
+  background-color: #ffffff;
+  border: 10px solid #000000;
+  box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
+  min-width: 920px;
+}
+
+
+
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 84px;
+  right: 80px;
+  width: 26px;
+  height: 26px;
+  background-color: #ffffff;
+  border: none;
+  background-image: url("../images/icons/icon-exit.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-title {
+  font-family: "Raleway";
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.form-label {
+font-family: "Rubik";
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+margin-bottom: 14px;
+}
+
+.control-label {
+font-family: "Rubik";
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+}
+
+
+
+.help-link-order {
+  border: none;
+  min-width: 200px;
+  width: fit-content;
+}
+
+.order-form-top {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 42px;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+
+.field {
+  min-width: 60px;
+  margin: 0;
+  padding: 20px 20px;
+  border: none;
+  background-color: rgba(240, 240, 240, 1);
+}
+
+.fild-name {
+  width: 360px;
+
+}
+
+.fild-mail {
+  width: 360px;
+}
+
+.fild-get {
+  width: 540px;
+}
+
+.order-form-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-form-quantity {
+  display: flex;
+}
+
+.quantity-button {
+  min-width: 60px;
+  padding: 22px 22px;
+}
+
+.wwww {
+  display: flex;
 }
