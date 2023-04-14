@@ -40,6 +40,31 @@
         </div>
         <div class="navigation-bottom">
           <button class="navigation-link navigation-link-button" type="button">Каталок товаров</button>
+          <div class="popover popover-cart">
+          <section class="popover-content">
+            <h2 class="visually-hidden">Список товаров</h2>
+            <ul class="popover-list">
+              <li class="popover-items">
+                <a class="popover-link" href="#">Виртуальная реальность</a>
+              </li>
+              <li class="popover-items">
+                <a class="popover-link" href="#">Моноподы для селфи</a>
+              </li>
+              <li class="popover-items">
+                <a class="popover-link" href="#">Экшн-камеры</a>
+              </li>
+              <li class="popover-items">
+                <a class="popover-link" href="#">Фитнес-браслеты</a>
+              </li>
+              <li class="popover-items">
+                <a class="popover-link" href="#">Умные часы</a>
+              </li>
+              <li class="popover-items">
+                <a class="popover-link" href="#">Квадрокоптеры</a>
+              </li>
+</ul>
+          </section>
+        </div>
           <ul class="navigation-service">
             <li class="navigation-service-item">
               <a class="service-link" href="#">Доставка</a>
@@ -52,6 +77,8 @@
             </li>
           </ul>
         </div>
+        <div class="popover popover-cart">
+
       </nav>
     </header>
     <main class="main-index">
@@ -359,7 +386,7 @@
               <label class="form-label" for="order-mail">
                 Ваш e-mail:</label>
               <input class="field fild-mail" type="text" id="order-mail" name="order-mail" placeholder="почта" required>
-              <span class="control-label">Забавный у Вас адрес</span>
+              <span class="control-label control-label-warning">Забавный у Вас адрес</span>
             </p>
           </div>
           <div class="order-form-bottom">
@@ -370,12 +397,12 @@
               <input class="field fild-get" type="text" id="order-get" name="order-get" placeholder="В свободной форме" required>
             </p>
             <p class="field-group order-form-quantity">
-              <label class="form-label" for="order-quantity">
+              <label class="form-label form-label-quantity" for="order-quantity">
                 Количество:
               </label>
-              <div class="wwww">
+              <div class="button-wrapper">
               <button class="button quantity-button" type="submit">-</button>
-              <input class="field fild-quantity" type="text" id="order-quantity" name="order-quantity">
+              <input class="field fild-quantity" type="text" id="order-quantity" name="order-quantity" placeholder="1">
               <button class="button quantity-button" type="submit">+</button>
             </div>
             </p>
