@@ -51,6 +51,7 @@ body {
 
 /* Навигация */
 
+
 .page-header {
   background-image: linear-gradient(#ffff 20px, #FFE17F 20px, #FFE17F);
   width: 1160px;
@@ -151,7 +152,112 @@ body {
   fill: #000;
 }
 
+.popover-add {
+  position: absolute;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 20px 20px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  background-color: #000000;
+  min-height: 307px;
+}
 
+.popover-link-add {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+}
+
+.popover-items-add {
+  padding-left: 62px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(26, 26, 26, 1);
+  ;
+}
+
+.popover-items-normal {
+  position: relative;
+  padding-right: 117px;
+}
+
+.popover-close-button {
+  display: block;
+  position: absolute;
+  background-image: url("../images/icons/exit-icon-white.svg");
+  background-color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  top: 0;
+  right: 0;
+}
+
+.popover-items-normal::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/product/product-1-small\ 5.jpg");
+  width: 39px;
+  height: 43px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+.popover-items-pro {
+  position: relative;
+  padding-right: 87px;
+  padding-top: 20px;
+}
+
+.popover-items-pro::before {
+  position: absolute;
+  content: "";
+  background-image: url("../images/product/product-1-small\ 6.jpg");
+  width: 39px;
+  height: 43px;
+  background-repeat: no-repeat;
+  background-position: center;
+  left: 0;
+}
+
+
+
+
+.popover-list-add {
+  list-style-type: none;
+  padding: 0;
+}
+
+.total {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(26, 26, 26, 1);
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.popover-open-button {
+  padding: 14.5px 20px;
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-align: center;
+background-color: #fff;
+}
 
 .input-search {
   font-family: "Rubik";
@@ -231,6 +337,7 @@ body {
 }
 
 .popover {
+  display: none;
   position: absolute;
   top: 70px;
   z-index: 1;
