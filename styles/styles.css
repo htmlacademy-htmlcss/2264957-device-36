@@ -153,11 +153,11 @@ body {
 }
 
 .popover-add {
+  display: none;
   position: absolute;
   z-index: 2;
   box-sizing: border-box;
   width: 320px;
-  padding: 20px 20px;
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
@@ -177,10 +177,9 @@ body {
 }
 
 .popover-items-add {
-  padding-left: 62px;
-  padding-bottom: 20px;
+  padding: 20px 20px;
   border-bottom: 1px solid rgba(26, 26, 26, 1);
-  ;
+  display: flex;
 }
 
 .popover-items-normal {
@@ -199,12 +198,12 @@ body {
   cursor: pointer;
   width: 10px;
   height: 10px;
-  top: 0;
-  right: 0;
+  top: 20px;
+  right: 20px;
 }
 
 .popover-items-normal::before {
-  position: absolute;
+  display: block;
   content: "";
   background-image: url("../images/product/product-1-small\ 5.jpg");
   width: 39px;
@@ -221,7 +220,7 @@ body {
 }
 
 .popover-items-pro::before {
-  position: absolute;
+  display: block;
   content: "";
   background-image: url("../images/product/product-1-small\ 6.jpg");
   width: 39px;
@@ -248,6 +247,14 @@ body {
   margin-bottom: 20px;
 }
 
+.total-items-product {
+  padding-left: 20px;
+}
+
+.total-items-sum {
+  padding-right: 20px;
+}
+
 .popover-open-button {
   padding: 14.5px 20px;
   font-family: "Raleway";
@@ -256,8 +263,47 @@ body {
   line-height: 21px;
   letter-spacing: 0.2em;
   text-align: center;
-background-color: #fff;
+  background-color: #fff;
 }
+
+
+.popover-close-button:hover {
+  opacity: 0.6;
+}
+
+.popover-close-button:active {
+  opacity: 0.3;
+}
+
+.popover-close-button:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.popover-open-button:hover {
+  background-color: rgba(255, 225, 127, 1);
+}
+
+.popover-open-button:active {
+  background-color: rgba(255, 225, 127, 1);
+  opacity: 0.3;
+}
+
+.popover-open-button:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.popover-items-add:hover {
+  opacity: 0.6;
+}
+
+.popover-items-add:active {
+  opacity: 0.3;
+}
+
+.popover-items-add:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
 
 .input-search {
   font-family: "Rubik";
@@ -336,21 +382,14 @@ background-color: #fff;
   margin: 0;
 }
 
-.popover {
-  display: none;
-  position: absolute;
-  top: 70px;
-  z-index: 1;
-  box-sizing: border-box;
-  width: 1160px;
-  padding-left: 60px;
-  padding-top: 33px;
-  font-family: Rubik;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 225, 127, 1);
+
+
+.navigation-link-button:focus-within .popover-list {
+  display: block;
+}
+
+.popover-list {
+display: none;
 }
 
 .navigation-service {
@@ -1219,9 +1258,14 @@ b {
 }
 
 .help-link-footer {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   color: rgba(255, 255, 255, 1);
-  min-width: 125px;
-  padding: 0 35px;
+  padding: 0 17.5px;
   text-transform: uppercase;
 }
 
@@ -1324,6 +1368,7 @@ b {
   border: 10px solid #000000;
   box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1);
   min-width: 920px;
+
 }
 
 
@@ -1376,6 +1421,7 @@ b {
   border: none;
   min-width: 200px;
   width: fit-content;
+  background-color: #fff;
 }
 
 .order-form-top {
@@ -1425,7 +1471,11 @@ b {
 }
 
 
-.field {
+.field-modal {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   min-width: 60px;
   margin: 0;
   padding: 20px 20px;
@@ -1435,7 +1485,10 @@ b {
 
 .fild-name {
   width: 360px;
+}
 
+.control-label-name:not(:active) {
+  display: none;
 }
 
 .fild-mail {
@@ -1459,8 +1512,6 @@ b {
 
 .order-form-quantity {
   display: flex;
-  width: 60px;
-
 }
 
 .form-label-quantity {
@@ -1485,7 +1536,7 @@ b {
 
 .fild-quantity {
   width: 60px;
-  padding: 0;
+  padding: 20px 20px;
   text-align: center;
   font-family: "Rubik";
   font-size: 16px;
@@ -1495,11 +1546,22 @@ b {
 
 .quantity-button {
   min-width: 60px;
-  padding: 22px 22px;
+  padding: 20px 20px;
   border: none;
 }
 
 .button-wrapper {
   display: flex;
-  margin-top: 32px;
+}
+
+.quantity-button-minus {
+  background-image: url("../images/icons/icon-minus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.quantity-button-plus {
+  background-image: url("../images/icons/icon-plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
