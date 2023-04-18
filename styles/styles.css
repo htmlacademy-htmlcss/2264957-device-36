@@ -152,6 +152,8 @@ body {
   fill: #000;
 }
 
+/* Поповер корзина */
+
 .popover-add {
   display: none;
   position: absolute;
@@ -229,9 +231,6 @@ body {
   background-position: center;
   left: 0;
 }
-
-
-
 
 .popover-list-add {
   list-style-type: none;
@@ -383,26 +382,21 @@ body {
 }
 
 
-
-.navigation-link-button:focus-within .popover-list {
-  display: block;
-}
-
-.popover-list {
-display: none;
-}
-
 .navigation-service {
   display: flex;
   min-width: 471px;
   margin: 0 0 0 auto;
-  padding: 0 0 30px 0;
   justify-content: end;
   align-items: center;
-
 }
 
 .navigation-service-item {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
+  text-align: left;
   display: block;
   text-align: end;
 }
@@ -415,7 +409,9 @@ display: none;
   text-transform: uppercase;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
+  padding-left: 45px;
 }
+
 
 
 .navigation-item {
@@ -423,11 +419,6 @@ display: none;
   text-align: center;
 }
 
-
-.navigation-service-item {
-  width: 127px;
-  list-style-type: none;
-}
 
 .enter-item::before {
   position: absolute;
@@ -494,6 +485,55 @@ display: none;
 .logo-header:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
+
+/* Подменю каталога */
+
+.popover {
+  display: ;
+  position: absolute;
+  top: 70px;
+  z-index: 2;
+  box-sizing: border-box;
+  width: 1160px;
+  padding-left: 60px;
+  padding-top: 33px;
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(255, 225, 127, 1);
+}
+
+.popover-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.popover-items {
+  padding-bottom: 20px;
+}
+
+.popover-link {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: left;
+  color: rgba(0, 0, 0, 1);
+  text-decoration: none;
+}
+
+.popover-block {
+  padding-bottom: 25px;
+}
+
+.popover-block:not(:first-child) {
+  margin-left: 60px;
+}
+
 
 
 /* Слайдер */
@@ -679,13 +719,14 @@ b {
   opacity: 0.3;
 }
 
-.slider-button:focus {
+.slider-button::focus {
   outline-color: #AF4FFF;
   outline-offset: 3px;
 }
 
 
 .slider-pagination-button {
+  position: relative;
   width: 12px;
   height: 12px;
   margin: 0;
@@ -694,6 +735,15 @@ b {
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
+}
+
+.slider-pagination-button:before {
+  position: absolute;
+  content: "";
+  border: 2px solid #AF4FFF;
+  width: 16px;
+  height: 16px;
+
 }
 
 
@@ -710,11 +760,6 @@ b {
   opacity: 0.6;
 }
 
-.slider-pagination-button:focus {
-  outline: 1px solid #AF4FFF;
-  outline-offset: 2px;
-  border-radius: 0;
-}
 
 .slider-pagination-button-current {
   background-color: #000000;

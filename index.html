@@ -35,60 +35,64 @@
               <a class="navigation-link navigation-link-add" href="#">
                 <span class="add-quantity">2</span>
                 Корзина</a>
-                <div class="popover-add popover-cart-add">
-                  <div class="popover-content-add">
-                    <h2 class="visually-hidden">Список товаров</h2>
-                    <ul class="popover-list-add">
-                      <li class="popover-items-add popover-items-normal">
-                        <a class="popover-link-add" href="#">Любительская селфи-палка</a>
-                        <button class="popover-close-button">
-                          <span class="visually-hidden">Закрыть</span>
-                        </button>
-                      </li>
-                      <li class="popover-items-add popover-items-pro">
-                        <a class="popover-link-add" href="#">Профессиональная селфи-палка</a>
-                        <button class="popover-close-button">
-                          <span class="visually-hidden">Закрыть</span>
-                        </button>
-                      </li>
-                      <div class="total">
-                        <p class="total-items">Товаров:<span>2</span></p>
-                        <p class="total-items">Сумма:<span>2000 Р</span></p>
-                      </div>
-                    </ul>
-                    <button class="popover-open-button">Открыть корзину</button>
+              <div class="popover-add popover-cart-add">
+                <h2 class="visually-hidden">Список товаров</h2>
+                <ul class="popover-list-add">
+                  <li class="popover-items-add popover-items-normal">
+                    <a class="popover-link-add" href="#">Любительская селфи-палка</a>
+                    <button class="popover-close-button">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                  <li class="popover-items-add popover-items-pro">
+                    <a class="popover-link-add" href="#">Профессиональная селфи-палка</a>
+                    <button class="popover-close-button">
+                      <span class="visually-hidden">Закрыть</span>
+                    </button>
+                  </li>
+                  <div class="total">
+                    <p class="total-items-product">Товаров:<span>2</span></p>
+                    <p class="total-items-sum">Сумма:<span>2000 ₽</span></p>
                   </div>
-                </div>
+                </ul>
+                <button class="popover-open-button">Открыть корзину</button>
+              </div>
             </li>
           </ul>
         </div>
         <div class="navigation-bottom">
           <button class="navigation-link navigation-link-button" type="button">Каталок товаров</button>
           <div class="popover popover-cart">
-          <section class="popover-content">
-            <h2 class="visually-hidden">Список товаров</h2>
-            <ul class="popover-list">
-              <li class="popover-items">
-                <a class="popover-link" href="#">Виртуальная реальность</a>
-              </li>
-              <li class="popover-items">
-                <a class="popover-link" href="#">Моноподы для селфи</a>
-              </li>
-              <li class="popover-items">
-                <a class="popover-link" href="#">Экшн-камеры</a>
-              </li>
-              <li class="popover-items">
-                <a class="popover-link" href="#">Фитнес-браслеты</a>
-              </li>
-              <li class="popover-items">
-                <a class="popover-link" href="#">Умные часы</a>
-              </li>
-              <li class="popover-items">
-                <a class="popover-link" href="#">Квадрокоптеры</a>
-              </li>
-</ul>
-          </section>
-        </div>
+            <section class="popover-content">
+              <h2 class="visually-hidden">Список товаров</h2>
+              <ul class="popover-list">
+                <div class="popover-block">
+                <li class="popover-items">
+                  <a class="popover-link" href="#">Виртуальная реальность</a>
+                </li>
+                <li class="popover-items">
+                  <a class="popover-link" href="#">Моноподы для селфи</a>
+                </li>
+                <li class="popover-items">
+                  <a class="popover-link" href="#">Экшн-камеры</a>
+                </li>
+                </div>
+                <div class="popover-block">
+                <li class="popover-items">
+                  <a class="popover-link" href="#">Фитнес-браслеты</a>
+                </li>
+                <li class="popover-items">
+                  <a class="popover-link" href="#">Умные часы</a>
+                </li>
+                </div>
+                <div class="popover-block">
+                <li class="popover-items">
+                  <a class="popover-link" href="#">Квадрокоптеры</a>
+                </li>
+                </div>
+              </ul>
+            </section>
+          </div>
           <ul class="navigation-service">
             <li class="navigation-service-item">
               <a class="service-link" href="#">Доставка</a>
@@ -101,7 +105,7 @@
             </li>
           </ul>
         </div>
-        <div class="popover popover-cart">
+
 
       </nav>
     </header>
@@ -400,37 +404,43 @@
           <h2 class="modal-title">Доставка под заказ</h2>
           <form class="order-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="order-form-top">
-            <p class="field-group order-form-name">
-              <label class="form-label" for="order-name">
-                Ваше имя:</label>
-              <input class="field fild-name" type="text" id="order-name" name="order-name" placeholder="Введите имя" required>
-              <span class="control-label">Добавьте имя</span>
-            </p>
-            <p class="field-group order-form-mail">
-              <label class="form-label" for="order-mail">
-                Ваш e-mail:</label>
-              <input class="field fild-mail" type="text" id="order-mail" name="order-mail" placeholder="почта" required>
-              <span class="control-label control-label-warning">Забавный у Вас адрес</span>
-            </p>
-          </div>
-          <div class="order-form-bottom">
-            <p class="field-group order-form-get`">
-              <label class="form-label" for="order-get">
-                Что нужно привезти:
-              </label>
-              <input class="field fild-get" type="text" id="order-get" name="order-get" placeholder="В свободной форме" required>
-            </p>
-            <p class="field-group order-form-quantity">
-              <label class="form-label form-label-quantity" for="order-quantity">
-                Количество:
-              </label>
-              <div class="button-wrapper">
-              <button class="button quantity-button" type="submit">-</button>
-              <input class="field fild-quantity" type="text" id="order-quantity" name="order-quantity" placeholder="1">
-              <button class="button quantity-button" type="submit">+</button>
+              <p class="field-group order-form-name">
+                <label class="form-label" for="order-name">
+                  Ваше имя:</label>
+                <input class="field-modal fild-name" type="text" id="order-name" name="order-name"
+                  placeholder="Введите имя" required>
+                <span class="control-label control-label-name">Добавьте имя</span>
+              </p>
+              <p class="field-group order-form-mail">
+                <label class="form-label" for="order-mail">
+                  Ваш e-mail:</label>
+                <input class="field-modal fild-mail" type="text" id="order-mail" name="order-mail" placeholder="почта"
+                  required>
+                <span class="control-label control-label-warning">Забавный у Вас адрес</span>
+              </p>
             </div>
-            </p>
-          </div>
+            <div class="order-form-bottom">
+              <p class="field-group order-form-get`">
+                <label class="form-label" for="order-get">
+                  Что нужно привезти:
+                </label>
+                <input class="field-modal fild-get" type="text" id="order-get" name="order-get"
+                  placeholder="В свободной форме" required>
+              </p>
+              <p class="field-group order-form-quantity">
+                <label class="form-label form-label-quantity" for="order-quantity">
+                  Количество:
+                </label>
+                <span class="button-wrapper">
+                  <button class="button quantity-button quantity-button-minus" type="button"><span
+                      class="visually-hidden">Убавить количество</span></button>
+                  <input class="field-modal fild-quantity" type="text" id="order-quantity" name="order-quantity"
+                    placeholder="1">
+                  <button class="button quantity-button quantity-button-plus" type="button"><span
+                      class="visually-hidden">Добавить количество</span></button>
+                </span>
+              </p>
+            </div>
             <button class="button help-link help-link-order" type="submit">Отправить</button>
           </form>
         </section>
