@@ -719,7 +719,7 @@ b {
   opacity: 0.3;
 }
 
-.slider-button::focus {
+.slider-button:focus {
   outline-color: #AF4FFF;
   outline-offset: 3px;
 }
@@ -735,15 +735,17 @@ b {
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
+  outline: none;
 }
 
-.slider-pagination-button:before {
+.slider-pagination-button:focus::before {
   position: absolute;
   content: "";
   border: 2px solid #AF4FFF;
   width: 16px;
   height: 16px;
-
+  left: -5px;
+  top: -4px;
 }
 
 
@@ -1179,7 +1181,6 @@ b {
   background-color: transparent;
   padding: 18px 39px;
   border: 3px solid rgba(196, 196, 196, 1);
-  ;
 }
 
 .subscribe {
@@ -1194,6 +1195,7 @@ b {
 
 .title-paragraph-subscribe {
   position: relative;
+  padding-top: 13.5px;
 }
 
 
@@ -1204,7 +1206,7 @@ b {
   background-image: url("../images/icons/check-mark.svg");
   height: 16px;
   width: 16px;
-  bottom: 60px;
+  top: 20px;
   right: 144px;
   background-repeat: no-repeat;
 }
@@ -1287,7 +1289,7 @@ b {
   grid-row: 3;
 }
 
-.logo-footer-html {
+.logo-html-footer {
   display: block;
   grid-column: 3;
   grid-row: 3;
@@ -1318,33 +1320,16 @@ b {
   list-style-type: none;
 }
 
-.footer-social-link-tg {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: #B6B4B5;
-  border-radius: 50%;
-}
 
-.footer-social-link-yt {
-  display: block;
-  width: 40px;
-  height: 40px;
-  background-color: #B6B4B5;
-  border-radius: 50%;
-}
-
-.footer-social-link-tw {
+.footer-social-link {
+  position: relative;
   display: block;
   width: 40px;
   height: 40px;
   background-color: #B6B4B5;
   background-position: center;
   border-radius: 50%;
-}
-
-.footer-social-link {
-  position: relative;
+  outline: none;
 }
 
 .footer-social-icon {
@@ -1373,9 +1358,19 @@ b {
   opacity: 0.3;
 }
 
+
+.footer-social-link:focus:after {
+  position: absolute;
+  display: block;
+  content: "";
+  border: 2px solid rgba(175, 79, 255, 1);
+  width: 40px;
+  height: 40px;
+  right: -2px;
+  bottom: -2px;
+}
+
 .logo-html-academy {
-  width: 115px;
-  height: 33px;
   fill: #FFC700;
 }
 
@@ -1387,11 +1382,26 @@ b {
   fill: #B6B4B5;
 }
 
-.logo-html-academy:focus svg {
+.logo-html-academy:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
 
+.contacts-phone:hover {
+  color:rgba(255, 199, 0, 1);
+}
 
+.contacts-phone:active {
+  color:rgba(255, 199, 0, 1);
+  opacity: 0.3;
+}
+
+.contacts-phone:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+address {
+  font-style: normal;
+}
 /* Модальное окно */
 .modal-container {
   position: fixed;
