@@ -65,6 +65,10 @@ body {
   margin-right: auto;
 }
 
+.logo-header {
+  display: block;
+}
+
 
 .navigation {
   width: 1040px;
@@ -97,7 +101,9 @@ body {
 
 
 .navigation-top {
+  position: relative;
   display: flex;
+  padding-top: 20px;
 }
 
 .search-form {
@@ -110,7 +116,7 @@ body {
   position: relative;
   display: flex;
   list-style-type: none;
-  margin: 0 0 0 26px;
+  margin: 0 0 0 12px;
   padding: 5px 30px;
   align-items: center;
 }
@@ -269,8 +275,13 @@ body {
 }
 
 .popover-open-button:active {
-  background-color: rgba(255, 225, 127, 1);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.popover-open-button:disabled {
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .popover-open-button:focus {
@@ -291,16 +302,30 @@ body {
 
 
 .input-search {
+  position: relative;
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
   background-color: transparent;
-  min-width: 359px;
+  width: 100%;
   padding: 10px 48px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
+  height: 40px;
+}
+
+.navigation-top::before {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/icons/icon-search.svg");
+  background-repeat: no-repeat;
+  left: 16px;
+  top: 32px;
 }
 
 .button-search {
@@ -312,13 +337,12 @@ body {
   text-align: center;
   color: #000000;
   background-color: transparent;
-  padding: 10px 56px;
+  padding: 10px 15px;
   border-radius: 0 50px 50px 0;
+  height: 40px;
 }
 
-.navigation-top {
-  padding-top: 30px;
-}
+
 
 .navigation-list {
   display: flex;
@@ -363,7 +387,7 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 231px;
-  padding: 30px 0 0 0;
+  padding: 31px 0 0 0;
   margin: 0;
 }
 
@@ -412,8 +436,8 @@ body {
   background-image: url("../images/icons/enter.svg");
   height: 12px;
   width: 15px;
-  top: 8px;
-  left: -10px;
+  top: 10px;
+  left: -14px;
   background-repeat: no-repeat;
 }
 
@@ -437,8 +461,7 @@ body {
   height: 14px;
   width: 16px;
   top: 14px;
-  left: 0;
-  right: 12px;
+  left: -5px;
   background-repeat: no-repeat;
 }
 
@@ -449,7 +472,7 @@ body {
   font-size: 14px;
   z-index: 2;
   top: 10px;
-  left: -14px;
+  left: -20px;
   height: 20px;
   padding: 5px;
   display: flex;
@@ -530,7 +553,7 @@ body {
 /* Слайдер */
 
 .popular-goods {
-  background-image: linear-gradient(#FFE17F 150px, #ffff 150px, #ffff);
+  background-image: linear-gradient(#FFE17F 135px, #ffff 135px, #ffff);
   margin: 0 auto 70px auto;
 }
 
@@ -585,12 +608,17 @@ body {
 }
 
 .title-advantages {
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: left;
   margin-right: 20px;
 }
 
 b {
   display: block;
-  font-family: Rubik;
+  font-family: "Rubik";
   font-size: 36px;
   font-weight: 400;
   line-height: 30px;
@@ -623,6 +651,11 @@ b {
 }
 
 .help-link {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 21px;
+  letter-spacing: 0.2em;
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -653,7 +686,7 @@ b {
 .slider-description {
   width: 560px;
   padding-left: 40px;
-  padding-top: 105px;
+  padding-top: 90px;
 }
 
 .slider-peacture {
@@ -689,6 +722,7 @@ b {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  margin-top: -45px;
 }
 
 .slider-button {
@@ -776,7 +810,7 @@ b {
 /* Меню продукции */
 
 .product {
-  margin-bottom: 70px;
+  margin-bottom: 80px;
 }
 
 .product-list {
@@ -902,6 +936,7 @@ b {
 }
 
 .service-paragraph {
+  padding-top: 34px;
   width: 452px;
   padding-bottom: 144.5px;
 }
@@ -922,7 +957,7 @@ b {
   height: 164px;
   background-image: url("../images/icons/delivery-man.svg");
   background-repeat: no-repeat;
-  right: 66.7px;
+  right: 64px;
   top: 77.5px;
 }
 
@@ -978,15 +1013,16 @@ b {
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .delivery-rare {
   position: relative;
   text-align: center;
-  margin-top: 70px;
+  margin-top: 35px;
   background-color: #F0F0F0;
   padding: 35px 125px;
-  margin-bottom: 70px;
+  margin-bottom: 120px;
 }
 
 .delivery-rare::before {
@@ -1035,11 +1071,16 @@ b {
   list-style-type: none;
   text-align: center;
   padding: 9px 0 9px 0;
-  margin-bottom: 46px;
+
 }
 
 .service-item-current {
   background-color: #000000;
+  margin-bottom: 36px;
+}
+
+.service-item-guarantee {
+  margin-bottom: 34px;
 }
 
 .service-item-current .help-link {
@@ -1124,6 +1165,13 @@ b {
   width: fit-content;
 }
 
+.title-items-contact {
+  margin-bottom: 48px;
+}
+
+.title-paragraph-contact {
+  margin-bottom: 30px;
+}
 /* Подписаться */
 
 .subscribe-wrapper {
@@ -1378,11 +1426,11 @@ b {
 }
 
 .contacts-phone:hover {
-  color:rgba(255, 199, 0, 1);
+  color: rgba(255, 199, 0, 1);
 }
 
 .contacts-phone:active {
-  color:rgba(255, 199, 0, 1);
+  color: rgba(255, 199, 0, 1);
   opacity: 0.3;
 }
 
@@ -1393,6 +1441,7 @@ b {
 address {
   font-style: normal;
 }
+
 /* Модальное окно */
 .modal-container {
   position: fixed;
@@ -1529,8 +1578,13 @@ address {
   width: 360px;
 }
 
-.control-label-name:not(:active) {
+.control-label-name {
   display: none;
+}
+
+
+.order-form-name:focus-within .control-label-name {
+  display: block;
 }
 
 .fild-mail {
@@ -1606,4 +1660,14 @@ address {
   background-image: url("../images/icons/icon-plus.svg");
   background-position: center;
   background-repeat: no-repeat;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
