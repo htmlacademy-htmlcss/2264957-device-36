@@ -38,6 +38,7 @@ html {
 }
 
 body {
+  min-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -67,6 +68,8 @@ body {
 
 .logo-header {
   display: block;
+  width: 145px;
+  height: 36px;
 }
 
 
@@ -103,12 +106,68 @@ body {
 .navigation-top {
   position: relative;
   display: flex;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
+/* Форма навигации */
 .search-form {
   min-width: 517px;
   display: flex;
+}
+
+.input-search {
+  position: relative;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  background-color: transparent;
+  width: 100%;
+  padding: 10px 48px;
+  border: 2px solid #000000;
+  border-radius: 50px 0 0 50px;
+  height: 40px;
+}
+
+.input-search:active {
+color:rgba(0, 0, 0, 1);
+}
+
+.input-search:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+.input-search:disabled {
+  opacity: 0.3;
+}
+
+.button-search {
+  min-width: 160px;
+  font-family: "Rubik";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  background-color: transparent;
+  padding: 10px 15px;
+  border-radius: 0 50px 50px 0;
+  height: 40px;
+}
+
+.button-search:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.button-search:active {
+  background-color: black;
+  color: rgba(255, 255, 255, 0.3)
+}
+
+.button-search:focus-visible {
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 .enter-list {
@@ -116,7 +175,7 @@ body {
   position: relative;
   display: flex;
   list-style-type: none;
-  margin: 0 0 0 12px;
+  margin: 0;
   padding: 5px 30px;
   align-items: center;
 }
@@ -125,7 +184,7 @@ body {
   position: relative;
   min-width: 231px;
   margin: 0;
-  padding: 5px 12px;
+  padding: 5px 24px;
   color: rgba(0, 0, 0, 1);
   text-decoration: none;
   text-align: center;
@@ -149,7 +208,8 @@ body {
 
 .navigation-link-add {
   position: relative;
-  margin-left: 36px;
+  margin-left: 16px;
+  padding-left: 40px;
 }
 
 .navigation-icon-add {
@@ -160,6 +220,18 @@ body {
   left: 0;
   margin-right: 0 auto;
   fill: #000;
+}
+
+.navigation-top-link:hover {
+  opacity: 0.6;
+}
+
+.navigation-top-link:active {
+  opacity: 0.3;
+}
+
+.navigation-top-link:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 /* Поповер корзина */
@@ -301,20 +373,7 @@ body {
 }
 
 
-.input-search {
-  position: relative;
-  font-family: "Rubik";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: left;
-  background-color: transparent;
-  width: 100%;
-  padding: 10px 48px;
-  border: 2px solid #000000;
-  border-radius: 50px 0 0 50px;
-  height: 40px;
-}
+
 
 .navigation-top::before {
   position: absolute;
@@ -328,19 +387,7 @@ body {
   top: 32px;
 }
 
-.button-search {
-  min-width: 160px;
-  font-family: "Rubik";
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-align: center;
-  color: #000000;
-  background-color: transparent;
-  padding: 10px 15px;
-  border-radius: 0 50px 50px 0;
-  height: 40px;
-}
+
 
 
 
@@ -379,6 +426,18 @@ body {
   background-repeat: no-repeat;
   left: 243px;
   top: 0;
+}
+
+.navigation-link-button:focus::after{
+  background-image: url("../images/icons/icon-minus.svg");
+}
+
+.navigation-link-button:hover::after {
+  opacity: 1;
+}
+
+.navigation-link-button:active:after {
+  opacity: 1;
 }
 
 .navigation-bottom {
@@ -437,7 +496,7 @@ body {
   height: 12px;
   width: 15px;
   top: 10px;
-  left: -14px;
+  left: 0;
   background-repeat: no-repeat;
 }
 
@@ -461,7 +520,7 @@ body {
   height: 14px;
   width: 16px;
   top: 14px;
-  left: -5px;
+  left: 15px;
   background-repeat: no-repeat;
 }
 
@@ -472,7 +531,7 @@ body {
   font-size: 14px;
   z-index: 2;
   top: 10px;
-  left: -20px;
+  left: 0;
   height: 20px;
   padding: 5px;
   display: flex;
@@ -543,7 +602,7 @@ body {
 
 
 .menu-popover:focus-within .popover-cart {
-  display: inline-block;
+  display: flex;
 }
 
 
@@ -662,11 +721,13 @@ b {
   z-index: 0;
 }
 
-.help-link:not(.help-link-footer):hover {
+.help-link:not(.help-link-footer):hover
+.help-link:not(.button-service):hover{
   background-color: rgba(255, 225, 127, 1);
 }
 
-.help-link:not(.help-link-footer):active {
+.help-link:not(.help-link-footer):active
+.help-link:not(.button-service):hover{
   background-color: #FFCC33;
 }
 
@@ -769,8 +830,9 @@ b {
   border: 2px solid #AF4FFF;
   width: 16px;
   height: 16px;
-  left: -5px;
-  top: -4px;
+  left: 50%;
+  top: 50%;
+  transform: translate(50%, -50%);
 }
 
 
@@ -892,7 +954,7 @@ b {
   opacity: 0.3;
 }
 
-.product-item:focus {
+.product-link:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
 
@@ -1001,7 +1063,24 @@ b {
   width: fit-content;
 }
 
+.button-service-current {
+  height: 40px;
+width: 280px;
+text-align: left;
+}
 
+.button-service-current:hover {
+text-align: center;
+}
+
+.button-service-current:active {
+  text-align: center;
+  }
+
+.button-service-current:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 5px;
+  }
 
 .delivery-button {
   font-family: "Raleway";
@@ -1025,7 +1104,7 @@ b {
   margin-bottom: 120px;
 }
 
-.delivery-rare::before {
+.delivery-button::before {
   display: block;
   position: absolute;
   content: "";
@@ -1040,19 +1119,19 @@ b {
   left: 0;
 }
 
-.delivery-rare:hover::before {
+.delivery-button:hover::before {
   background-color: #FFC700;
 }
 
-.delivery-rare:hover::after {
+.delivery-button:hover::after {
   opacity: 1;
 }
 
-.delivery-rare:active {
+.delivery-button:active {
   opacity: 0.3;
 }
 
-.delivery-rare::after {
+.delivery-button::after {
   position: absolute;
   content: "";
   background-image: url("../images/icons/i-icon.svg");
@@ -1077,6 +1156,8 @@ b {
 .service-item-current {
   background-color: #000000;
   margin-bottom: 36px;
+  padding: 0;
+  padding-left: 10px;
 }
 
 .service-item-guarantee {
@@ -1355,6 +1436,22 @@ b {
   text-transform: uppercase;
 }
 
+.help-link-footer:hover {
+  color: #FFC700;
+  border-bottom: 2px solid #FFC700;
+}
+
+
+.help-link-footer:active {
+  color: rgba(255, 199, 0, 0.3);
+  border-bottom: 2px solid rgba(255, 199, 0, 0.3);
+}
+
+.help-link-footer:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+}
+
+
 .footer-item {
   list-style-type: none;
 }
@@ -1421,7 +1518,7 @@ b {
   fill: #B6B4B5;
 }
 
-.logo-html-academy:focus {
+.logo-footer-html:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
 
