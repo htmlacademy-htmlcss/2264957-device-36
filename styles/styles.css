@@ -208,9 +208,15 @@ body {
 }
 
 .navigation-link-add {
+  font-family: "Rubik";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
   position: relative;
   margin-left: 16px;
   padding-left: 40px;
+  border: none;
+  background-color: transparent;
 }
 
 .navigation-icon-add {
@@ -331,6 +337,7 @@ body {
   letter-spacing: 0.2em;
   text-align: center;
   background-color: #fff;
+  text-transform: uppercase;
 }
 
 .navigation-item-add:not(:focus-within) .popover-add {
@@ -434,7 +441,7 @@ body {
   border-radius: 50%;
   background-repeat: no-repeat;
   left: 243px;
-  top: 0;
+  top: -3px;
   z-index: 3;
 }
 
@@ -464,7 +471,7 @@ body {
 .navigation-service {
   display: flex;
   min-width: 471px;
-  margin: 0 0 0 auto;
+  margin: 0 -6px 0 auto;
   justify-content: end;
   align-items: center;
 }
@@ -1262,11 +1269,11 @@ b {
 }
 
 .contact-title {
-font-family: "Rubik";
-font-size: 24px;
-font-weight: 700;
-line-height: 30px;
-margin-bottom: 15px;
+  font-family: "Rubik";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-bottom: 15px;
 }
 
 .contact-title-time {
@@ -1357,13 +1364,14 @@ margin-bottom: 15px;
 /* подвал */
 .page-footer {
   background-color: rgba(68, 68, 68, 1);
+  padding-bottom: 61px;
 }
 
 .footer-wrapper {
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
   column-gap: 62px;
-  row-gap: 62px;
+  row-gap: 40px;
   padding-top: 25px;
 }
 
@@ -1373,17 +1381,16 @@ margin-bottom: 15px;
 }
 
 .footer-social-item {
-  padding: 0 15px;
+  padding: 0 8px;
 }
 
 .footer-social-list {
   display: flex;
+  justify-content: center;
   list-style-type: none;
   padding: 0;
   margin: 0;
-  justify-content: center;
   align-items: center;
-  padding-bottom: 61px;
 }
 
 .footer-link {
