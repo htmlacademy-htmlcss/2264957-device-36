@@ -1372,8 +1372,8 @@ b {
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
   column-gap: 62px;
-  row-gap: 40px;
-  padding-top: 25px;
+  row-gap: 27px;
+  padding-top: 58px;
 }
 
 .contacts-phone {
@@ -1430,12 +1430,14 @@ b {
 }
 
 .phone-contact {
+  padding-top: 5px;
   grid-column: 3;
   grid-row: 2;
   text-align: end;
 }
 
 .footer-social {
+  padding-top: 20px;
   grid-column: 2;
   grid-row: 3;
 }
@@ -1445,6 +1447,7 @@ b {
   grid-column: 3;
   grid-row: 3;
   text-align: end;
+  padding-top: 5px;
 }
 
 .footer-paragraph {
@@ -1513,7 +1516,7 @@ b {
   height: 7px;
   width: 80px;
   background-color: #FFC500;
-  bottom: 50px;
+  bottom: 40px;
 }
 
 .footer-social-link:hover {
