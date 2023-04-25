@@ -840,7 +840,7 @@ b {
   height: 16px;
   left: 50%;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 
@@ -1368,6 +1368,7 @@ b {
 }
 
 .footer-wrapper {
+  position: relative;
   display: grid;
   grid-template-columns: 1fr 500px 1fr;
   column-gap: 62px;
@@ -1435,7 +1436,6 @@ b {
 }
 
 .footer-social {
-  position: relative;
   grid-column: 2;
   grid-row: 3;
 }
@@ -1506,15 +1506,14 @@ b {
   fill: #444;
 }
 
-.footer-social::before {
+.footer-wrapper::before {
   display: block;
   content: "";
   position: absolute;
   height: 7px;
   width: 80px;
   background-color: #FFC500;
-  left: -330px;
-  top: 15px;
+  bottom: 50px;
 }
 
 .footer-social-link:hover {
