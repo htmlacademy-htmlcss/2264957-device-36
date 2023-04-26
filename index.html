@@ -19,9 +19,13 @@
         <div class="navigation-top">
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="get">
             <label class="visually-hidden" for="site-search">Поиск</label>
+            <span class="input-search-wrapper">
             <input class="input-search" placeholder="Поиск по сайту" type="search" name="site-search" id="site-search"
               required>
+          </span>
+             <span class="button-search-wrapper">
             <button class="button-search" type="submit">Найти</button>
+        </span>
           </form>
           <ul class="enter-list">
             <li class="enter-item">
@@ -30,14 +34,13 @@
           </ul>
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-compare navigation-top-link">Сравнить</a>
+              <a class="navigation-link navigation-link-compare navigation-top-link" href="#">Сравнить</a>
             </li>
             <li class="navigation-item navigation-item-add">
               <button  class="navigation-link navigation-link-add navigation-top-link" type="button">
                 <span class="add-quantity">2</span>
                 Корзина</button>
                 <div class="popover-add popover-cart-add">
-                <h2 class="visually-hidden">Список товаров</h2>
                 <ul class="popover-list-add">
                   <li class="popover-items-add popover-items-normal">
                     <img class="popover-picture" src="/images/product/product-1-small-5.jpg" width="39" height="43" alt="Селфи палка на сером фоне.">
@@ -54,8 +57,8 @@
                     </button>
                   </li>
                   <div class="total">
-                    <p class="total-items-product">Товаров:<span>2</span></p>
-                    <p class="total-items-sum">Сумма:<span>2000 ₽</span></p>
+                    <p class="total-items-product">Товаров: <span>2</span></p>
+                    <p class="total-items-sum">Сумма: <span>2000 ₽</span></p>
                   </div>
                 </ul>
                 <button class="popover-open-button">Открыть корзину</button>
@@ -263,15 +266,13 @@
         </article>
       </div>
       <div class="container">
-        <div class="delivery-rare">
-          <a class="delivery-button" href="#">Доставим редкий товар под заказ</a>
-        </div>
+          <a class="delivery-button delivery-rare" href="#">Доставим редкий товар под заказ</a>
       </div>
       <!-- Контакты -->
       <div class="contact-wrapper container">
         <section class="about-us contacts">
           <h2 class="title-items title-items-contact">О нас</h2>
-          <p class="title-paragraph title-paragraph-contact">Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+          <p class="title-paragraph title-paragraph-contact">Огромный выбор гаджетов не оставит равнодушным<br>гика, который есть в каждом из нас.</p>
           <p class="title-paragraph title-paragraph-contact title-paragraph-contact-bottom">Мы можем доставить ваш товар в самые отдалённые уголки России транспортными
             компаниями:</p>
           <ul class="company-list">
@@ -283,8 +284,8 @@
         </section>
         <section class="contact contacts">
           <h2 class="title-items title-items-contact">Контакты</h2>
-          <p class="title-paragraph title-paragraph-contact">Вы можете забрать товар сами, заехав в наш офис.
-            Заодно сможете проверить работоспособность покупки.</p>
+          <p class="title-paragraph title-paragraph-contact">Вы можете забрать товар сами, заехав в наш офис.<br>
+            Заодно сможете проверить работоспособность покупки. </p>
           <h3 class="contact-title">Интернет-магазин «Девайс»</h3>
           <address class="title-paragraph">Санкт-Петербург, набережная реки Карповки, 5, литера П.</address>
           <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
@@ -300,9 +301,7 @@
       <div class="subscribe-wrapper">
         <section class="subscribe">
           <h2 class="title-items subscribe-title">Подпишитесь на рассылку</h2>
-          <p class="title-paragraph subscribe-title-paragraph">Еженедельный дайджест с обзорами новинок, длительными
-            тест-драйвами,
-            распаковками, а также акции, спецпредложения и вот это вот всё.</p>
+          <p class="title-paragraph subscribe-title-paragraph">Еженедельный дайджест с обзорами новинок,<br> длительными тест-драйвами, распаковками, а также акции, спецпредложения и вот это вот всё.</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label class="visually-hidden" for="subscribe-email">Почта</label>
             <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email"

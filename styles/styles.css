@@ -116,26 +116,47 @@ body {
 }
 
 .input-search {
-  position: relative;
   font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
   text-align: left;
-  background-color: transparent;
   width: 100%;
+  background-color: transparent;
   padding: 10px 48px;
   border: 2px solid #000000;
   border-radius: 50px 0 0 50px;
   height: 40px;
 }
 
+.input-search-wrapper {
+  width: 100%;
+}
+
 .input-search:active {
   color: rgba(0, 0, 0, 1);
 }
 
-.input-search:focus-visible {
+.input-search-wrapper:focus-within {
   outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 4px;
+  display: block;
+  width: 100%;
+  z-index: 0;
+}
+
+.input-search-wrapper {
+  position: relative;
+}
+
+.button-search-wrapper:focus-within {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 4px;
+  margin-left: -2px;
+}
+
+.input-search:focus {
+  outline: none;
 }
 
 .input-search:disabled {
@@ -166,8 +187,8 @@ body {
   color: rgba(255, 255, 255, 0.3)
 }
 
-.button-search:focus-visible {
-  outline: 2px solid rgba(175, 79, 255, 1);
+.button-search:focus {
+outline: none;
 }
 
 .enter-list {
@@ -257,8 +278,21 @@ body {
   line-height: 20px;
   color: rgba(255, 255, 255, 1);
   background-color: #000000;
-  min-height: 307px;
-  right: -83px;
+  padding-bottom: 17px;
+  right: -78px;
+  top: 72px;
+}
+
+
+.popover-list-add::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icons/popover-triangle.svg");
+  width: 14px;
+  height: 6px;
+  background-repeat: no-repeat;
+  top: -7px;
+  right: 48%;
 }
 
 .popover-link-add {
@@ -269,7 +303,7 @@ body {
   color: rgba(255, 255, 255, 1);
   text-decoration: none;
   text-align: left;
-  margin-left: 20px;
+  margin-left: 22px;
 }
 
 .popover-items-add {
@@ -307,29 +341,31 @@ body {
 
 
 .popover-list-add {
+  position: relative;
   list-style-type: none;
   padding: 0;
 }
 
 .total {
-  padding: 0;
   display: flex;
   justify-content: space-between;
   background-color: rgba(26, 26, 26, 1);
   width: 100%;
   margin-bottom: 20px;
+  box-sizing: border-box;
+  padding: 11px 21px 10px 19px;
 }
 
 .total-items-product {
-  padding-left: 20px;
+  margin: 0;
 }
 
 .total-items-sum {
-  padding-right: 20px;
+  margin: 0;
 }
 
 .popover-open-button {
-  padding: 14.5px 20px;
+  padding: 15px 20px;
   font-family: "Raleway";
   font-size: 18px;
   font-weight: 800;
@@ -383,14 +419,14 @@ body {
   opacity: 0.3;
 }
 
-.popover-items-add:focus {
+.popover-link-add:focus {
   outline: 2px solid rgba(175, 79, 255, 1);
 }
 
 
 
 
-.navigation-top::before {
+.input-search-wrapper::before {
   position: absolute;
   display: block;
   content: "";
@@ -399,7 +435,7 @@ body {
   background-image: url("../images/icons/icon-search.svg");
   background-repeat: no-repeat;
   left: 16px;
-  top: 42px;
+  top: 13px;
 }
 
 
@@ -447,6 +483,7 @@ body {
 
 .navigation-link-button:focus::after {
   background-image: url("../images/icons/icon-minus.svg");
+  opacity: 1;
 }
 
 .navigation-link-button:hover::after {
@@ -456,6 +493,12 @@ body {
 .navigation-link-button:active:after {
   opacity: 1;
 }
+
+.navigation-link-button:focus {
+  outline: 2px solid rgba(175, 79, 255, 1);
+  outline-offset: 4px;
+}
+
 
 .navigation-bottom {
   position: relative;
@@ -582,7 +625,7 @@ body {
   width: 1160px;
   padding-left: 60px;
   padding-top: 33px;
-  padding-bottom: 19px;
+  padding-bottom: 40px;
   padding-right: 60px;
   font-family: "Rubik";
   font-size: 16px;
@@ -594,13 +637,13 @@ body {
 
 .popover-list {
   list-style-type: none;
-  margin: 0 60px 0 0;
+  margin: -3px 60px 0 0;
   padding: 0;
 }
 
 
 .popover-items {
-  padding-bottom: 20px;
+  padding-bottom: 18px;
 }
 
 .popover-link {
@@ -731,12 +774,18 @@ b {
   z-index: 0;
 }
 
-.help-link:not(.help-link-footer):hover .help-link:not(.button-service):hover {
+.help-link:not(.help-link-footer):hover::before, .help-link:not(.button-service):hover::before {
   background-color: rgba(255, 225, 127, 1);
+  height: 100%;
 }
 
-.help-link:not(.help-link-footer):active .help-link:not(.button-service):hover {
+.help-link:not(.help-link-footer):active::before, .help-link:not(.button-service):active::before {
   background-color: #FFCC33;
+  height: 100%;
+}
+
+.help-link:hover::before {
+  background-color: rgba(255, 225, 127, 1);
 }
 
 
@@ -907,7 +956,7 @@ b {
   line-height: 24px;
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
-
+  letter-spacing: -0.02em;
 }
 
 .product-link::before {
@@ -970,7 +1019,8 @@ b {
 /* Сервис */
 
 .service-wrapper {
-  background-image: linear-gradient(#fff 104px, #F0F0F0 104px, #F0F0F0)
+  background-image: linear-gradient(#fff 104px, #F0F0F0 104px, #F0F0F0);
+  margin-bottom: 73px;
 }
 
 .service {
@@ -1002,7 +1052,6 @@ b {
   min-width: 452px;
   padding-left: 116px;
   padding-top: 72.5px;
-  padding-bottom: 34px;
 }
 
 .service-paragraph {
@@ -1105,10 +1154,11 @@ b {
 
 .delivery-rare {
   position: relative;
+  display: block;
   text-align: center;
   margin-top: 35px;
   background-color: #F0F0F0;
-  padding: 35px 125px;
+  padding: 38px 125px 35px 129px;
   margin-bottom: 120px;
 }
 
@@ -1143,8 +1193,9 @@ b {
   position: absolute;
   content: "";
   background-image: url("../images/icons/i-icon.svg");
+  opacity: 0.3;
   background-position: center;
-  background-color: rgba(220, 220, 220, 0.5);
+  background-color: #DCDCDC;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1201,7 +1252,7 @@ b {
 
 .company-list {
   margin: 0;
-  padding: 0 0 25px 50px;
+  padding: 0 0 25px 38px;
 }
 
 .company-list span {
@@ -1277,8 +1328,7 @@ b {
 }
 
 .title-paragraph-contact {
-  margin-bottom: 30px;
-  padding-left: 10px;
+  margin-bottom: 27px;
 }
 
 .contact-title {
@@ -1309,12 +1359,13 @@ b {
 .subscribe-title-paragraph {
   width: 560px;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 
 
 .subscribe-form {
+  width: 810px;
   display: flex;
 }
 
@@ -1325,14 +1376,13 @@ b {
   line-height: 30px;
   text-align: left;
   background-color: transparent;
-  min-width: 530px;
   padding: 16px 11px;
+  width: 100%;
   border: none;
   border-bottom: 2px solid #C4C4C4;
 }
 
 .button-subscribe {
-  min-width: 175px;
   font-family: Raleway;
   font-size: 18px;
   font-weight: 800;
@@ -1358,7 +1408,7 @@ b {
 
 .title-paragraph-subscribe {
   position: relative;
-  padding-top: 13.5px;
+  padding-top: 19px;
 }
 
 
@@ -1369,7 +1419,7 @@ b {
   background-image: url("../images/icons/check-mark.svg");
   height: 16px;
   width: 16px;
-  top: 20px;
+  top: 25px;
   right: 144px;
   background-repeat: no-repeat;
 }
@@ -1439,11 +1489,12 @@ b {
   display: flex;
   margin: 0;
   padding: 0;
+  padding-top: 5px;
   justify-content: center;
 }
 
 .phone-contact {
-  padding-top: 5px;
+  padding-top: 10px;
   grid-column: 3;
   grid-row: 2;
   text-align: end;
@@ -1605,14 +1656,20 @@ address {
   background-color: #ffffff;
   border: 10px solid #000000;
   box-shadow: 0 10px 0 rgba(0, 0, 0, 0.1);
-  min-width: 920px;
+  width: 920px;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  margin-top: -3px;
+  margin-left: -6px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 84px;
-  right: 80px;
+  top: 80px;
+  right: 71px;
   width: 26px;
   height: 26px;
   background-color: #ffffff;
@@ -1644,7 +1701,7 @@ address {
 
 .control-label {
   font-family: "Rubik";
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 20px;
 }
@@ -1677,13 +1734,16 @@ address {
   background-repeat: no-repeat;
   height: 12px;
   width: 15px;
-  right: 24px;
-  top: 62px;
+  right: 20px;
+  top: 58px;
   opacity: 0.3;
 }
 
 .order-form-mail {
+  display: block;
   position: relative;
+  margin-left: 38px;
+  margin-top: -3px;
 }
 
 .order-form-mail::after {
@@ -1694,8 +1754,8 @@ address {
   background-repeat: no-repeat;
   height: 12px;
   width: 15px;
-  right: 24px;
-  top: 62px;
+  right: 20px;
+  top: 58px;
 }
 
 .field-group {
@@ -1715,6 +1775,7 @@ address {
   padding: 20px 20px;
   border: none;
   background-color: rgba(240, 240, 240, 1);
+  box-sizing: border-box;
 }
 
 .fild-name {
@@ -1746,11 +1807,12 @@ address {
 .order-form-bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 55px;
 }
 
 .order-form-quantity {
   display: flex;
+  margin-left: 39px;
 }
 
 .form-label-quantity {
