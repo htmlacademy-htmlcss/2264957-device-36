@@ -722,7 +722,7 @@ outline: none;
 
 .slider-advantages {
   display: flex;
-  padding: 50px 20px 0 0;
+  padding: 50px 20px 20px 0;
 }
 
 .title-advantages {
@@ -774,7 +774,7 @@ b {
   font-weight: 800;
   line-height: 21px;
   letter-spacing: 0.2em;
-  display: block;
+  display: inline-block;
   text-align: center;
   text-transform: uppercase;
   z-index: 0;
@@ -1053,7 +1053,7 @@ b {
   position: absolute;
   display: block;
   content: "";
-  height: 100%;
+  height: calc(100% + 64px);
   border-right: 7px solid rgba(0, 0, 0, 1);
   left: 285px;
   top: 0;
@@ -1169,7 +1169,8 @@ b {
   margin-top: 35px;
   background-color: #F0F0F0;
   padding: 38px 125px 35px 129px;
-  margin-bottom: 120px;
+  height: 100px;
+  box-sizing: border-box;
 }
 
 .delivery-button::before {
@@ -1256,14 +1257,26 @@ b {
 }
 
 .company-item {
-  color: rgba(255, 199, 0, 1);
   padding-bottom: 10px;
+  list-style-type: none;
+}
+
+.company-item::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #ffc700;
+  margin-right: 26px;
+  border-radius: 50%;
+  margin-bottom: 4px;
+  margin-left: 5px;
 }
 
 .company-list {
   margin: 0;
-  padding: 0 0 25px 38px;
-}
+  padding: 0 0 25px 0;
+  }
 
 .company-list span {
   font-family: "Rubik", sans-serif;
@@ -1298,7 +1311,8 @@ b {
 .contact-wrapper {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 80px;
+  padding-bottom: 69px;
+  margin-top: 70px;
 }
 
 .contacts {
@@ -1306,12 +1320,12 @@ b {
 }
 
 .contacts::before {
-  position: absolute;
+  display: block;
   content: "";
   width: 84px;
   height: 7px;
   background-color: #000;
-  top: -47px;
+  margin-bottom: 40px;
 }
 
 .help-link-about-us {
@@ -1354,7 +1368,7 @@ b {
 .subscribe-title {
   width: 348px;
   margin: 0;
-  padding-bottom: 140px;
+  padding-bottom: 144px;
 }
 
 .subscribe-title-paragraph {
@@ -1368,6 +1382,7 @@ b {
 .subscribe-form {
   width: 810px;
   display: flex;
+  height: 57px;
 }
 
 .field {
