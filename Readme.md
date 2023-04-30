@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Artur  Pletnev](https://up.htmlacademy.ru/htmlcss/36/user/2264957).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Зиновьев](https://up.htmlacademy.ru/htmlcss/36/user/198751).
 
 ---
 
