@@ -1738,7 +1738,7 @@ outline: none;
   margin: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 }
 
 .order-form-name {
@@ -1781,7 +1781,6 @@ outline: none;
   display: flex;
   flex-direction: column;
   margin: 0;
-  margin-left: 5px;
 }
 
 
@@ -1827,7 +1826,7 @@ outline: none;
 .order-form-bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 48px;
 }
 
 .order-form-quantity {
