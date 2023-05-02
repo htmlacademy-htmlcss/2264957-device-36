@@ -86,7 +86,6 @@ body {
   color: inherit;
   text-decoration: none;
   padding: 5px 0 5px 22px;
-
 }
 
 
@@ -135,11 +134,11 @@ body {
 }
 
 .input-search:active {
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .input-search-wrapper:focus-within {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
   display: block;
   width: 100%;
@@ -151,7 +150,7 @@ body {
 }
 
 .button-search-wrapper:focus-within {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
   margin-left: -2px;
 }
@@ -176,7 +175,8 @@ body {
   padding: 10px 15px;
   border-radius: 0 50px 50px 0;
   height: 40px;
-  border: 2px solid rgba(0, 0, 0, 1);
+  border: 2px solid #000000;
+  margin-left: -2px;
 }
 
 .button-search:hover {
@@ -208,7 +208,7 @@ outline: none;
   min-width: 231px;
   margin: 0;
   padding: 5px 24px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
   text-align: center;
   vertical-align: baseline;
@@ -262,7 +262,7 @@ outline: none;
 }
 
 .navigation-top-link:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 
@@ -278,7 +278,7 @@ outline: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   background-color: #000000;
   padding-bottom: 17px;
   right: -78px;
@@ -302,7 +302,7 @@ outline: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   text-decoration: none;
   text-align: left;
   margin-left: 22px;
@@ -310,7 +310,7 @@ outline: none;
 
 .popover-items-add {
   padding: 20px 20px;
-  border-bottom: 1px solid rgba(26, 26, 26, 1);
+  border-bottom: 1px solid #1a1a1a;
   display: flex;
   flex-wrap: wrap;
 }
@@ -352,7 +352,7 @@ outline: none;
 .total {
   display: flex;
   justify-content: space-between;
-  background-color: rgba(26, 26, 26, 1);
+  background-color: #1a1a1a;
   width: 100%;
   margin-bottom: 20px;
   box-sizing: border-box;
@@ -393,11 +393,11 @@ outline: none;
 }
 
 .popover-close-button:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 .popover-open-button:hover {
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
 }
 
 .popover-open-button:active {
@@ -411,7 +411,7 @@ outline: none;
 }
 
 .popover-open-button:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 .popover-items-add:hover {
@@ -423,7 +423,7 @@ outline: none;
 }
 
 .popover-link-add:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 
@@ -500,7 +500,7 @@ outline: none;
 }
 
 .navigation-link-button:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
   outline-offset: 4px;
 }
 
@@ -519,7 +519,7 @@ outline: none;
 .navigation-service {
   display: flex;
   flex-wrap: wrap;
-  min-width: 471px;
+  min-width: 571px;
   margin: 0 -6px 0 auto;
   justify-content: end;
   align-items: center;
@@ -542,7 +542,7 @@ outline: none;
   line-height: 21px;
   text-transform: uppercase;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   padding-left: 45px;
 }
 
@@ -616,7 +616,7 @@ outline: none;
 }
 
 .logo-header:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 /* Подменю каталога */
@@ -637,8 +637,8 @@ outline: none;
   font-size: 16px;
   font-weight: 400;
   line-height: 18px;
-  color: rgba(0, 0, 0, 1);
-  background-color: rgba(255, 225, 127, 1);
+  color: #000000;
+  background-color: #ffe17f;
 }
 
 .popover-list {
@@ -658,7 +658,7 @@ outline: none;
   font-weight: 400;
   line-height: 18px;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-decoration: none;
 }
 
@@ -687,7 +687,7 @@ outline: none;
   font-weight: 800;
   line-height: 50px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   margin: 0;
   z-index: 1;
 }
@@ -698,7 +698,7 @@ outline: none;
   font-weight: 400;
   line-height: 30px;
   text-decoration: none;
-  color: rgba(68, 68, 68, 1);
+  color: #444444;
   padding: 0;
   margin: 0;
 }
@@ -734,7 +734,7 @@ outline: none;
   margin-right: 20px;
 }
 
-b {
+.bold {
   display: block;
   font-family: "Rubik", sans-serif;
   font-size: 36px;
@@ -780,11 +780,11 @@ b {
   z-index: 0;
   position: relative;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 .help-link:not(.help-link-footer):hover::before, .help-link:not(.button-service):hover::before {
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
   height: 100%;
 }
 
@@ -794,7 +794,7 @@ b {
 }
 
 .help-link:hover::before {
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
 }
 
 
@@ -803,7 +803,7 @@ b {
   position: absolute;
   width: 100%;
   height: 8px;
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
   left: 0;
   top: 50%;
   transform: translateY(-50%);
@@ -965,7 +965,7 @@ b {
   font-weight: 800;
   line-height: 24px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   letter-spacing: -0.02em;
 }
 
@@ -974,7 +974,7 @@ b {
   content: "";
   width: 160px;
   height: 160px;
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
   margin-bottom: 32px;
 }
 
@@ -1014,7 +1014,7 @@ b {
 }
 
 .product-link:hover::before {
-  background-color: rgba(255, 199, 0, 1);
+  background-color: #ffc700;
 }
 
 .product-item:active {
@@ -1022,7 +1022,7 @@ b {
 }
 
 .product-link:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 
@@ -1054,7 +1054,7 @@ b {
   display: block;
   content: "";
   height: calc(100% + 64px);
-  border-right: 7px solid rgba(0, 0, 0, 1);
+  border-right: 7px solid #000000;
   left: 285px;
   top: 0;
 }
@@ -1145,7 +1145,7 @@ b {
 }
 
 .button-service-current:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
   outline-offset: 5px;
 }
 
@@ -1155,7 +1155,7 @@ b {
   font-weight: 800;
   line-height: 23px;
   letter-spacing: 0.2em;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   text-align: center;
   margin: 0 auto;
   text-decoration: none;
@@ -1169,7 +1169,7 @@ b {
   margin-top: 35px;
   background-color: #F0F0F0;
   padding: 38px 125px 35px 129px;
-  height: 100px;
+  min-height: 100px;
   box-sizing: border-box;
 }
 
@@ -1179,7 +1179,7 @@ b {
   content: "";
   background-image: url("../images/icons/delivery.svg");
   background-position: center;
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
   width: 125px;
   height: 100px;
   background-repeat: no-repeat;
@@ -1249,7 +1249,7 @@ b {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
-  color: rgba(68, 68, 68, 1);
+  color: #444444;
 }
 
 .title-paragraph-contact-bottom {
@@ -1275,7 +1275,7 @@ b {
 
 .company-list {
   margin: 0;
-  padding: 0 0 25px 0;
+  padding: 0 0 18px 0;
   }
 
 .company-list span {
@@ -1283,7 +1283,7 @@ b {
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
 }
 
 
@@ -1368,7 +1368,7 @@ b {
 .subscribe-title {
   width: 348px;
   margin: 0;
-  padding-bottom: 144px;
+  padding-bottom: 146px;
 }
 
 .subscribe-title-paragraph {
@@ -1406,8 +1406,8 @@ b {
   letter-spacing: 0.2em;
   text-align: center;
   background-color: transparent;
-  padding: 18px 39px;
-  border: 3px solid rgba(196, 196, 196, 1);
+  padding: 18px 37px;
+  border: 3px solid #c4c4c4;
   text-transform: uppercase;
 }
 
@@ -1423,7 +1423,8 @@ b {
 }
 
 .title-paragraph-subscribe {
-  padding-top: 19px;
+  padding-top: 14px;
+  padding-right: 5px;
 }
 
 
@@ -1440,7 +1441,7 @@ b {
 
 /* подвал */
 .page-footer {
-  background-color: rgba(68, 68, 68, 1);
+  background-color: #444444;
   padding-bottom: 61px;
 }
 
@@ -1487,7 +1488,7 @@ b {
 }
 
 .logo-footer-device:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 .footer-address {
@@ -1530,11 +1531,11 @@ b {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
 }
 
 .help-link-footer {
-  color: rgba(255, 255, 255, 1);
+  color: #ffffff;
   padding: 0 17px;
   text-transform: uppercase;
 }
@@ -1565,7 +1566,7 @@ b {
 }
 
 .help-link-footer:not(:active):focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 
@@ -1615,7 +1616,7 @@ b {
   position: absolute;
   display: block;
   content: "";
-  border: 2px solid rgba(175, 79, 255, 1);
+  border: 2px solid #af4fff;
   width: 40px;
   height: 40px;
   right: -2px;
@@ -1635,7 +1636,7 @@ b {
 }
 
 .logo-footer-html:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
 .contacts-phone:hover {
@@ -1648,10 +1649,10 @@ b {
 }
 
 .contacts-phone:focus {
-  outline: 2px solid rgba(175, 79, 255, 1);
+  outline: 2px solid #af4fff;
 }
 
-address {
+.map-point {
   font-style: normal;
 }
 
@@ -1682,10 +1683,6 @@ address {
   box-sizing: border-box;
 }
 
-.modal-content {
-  margin-top: -3px;
-  margin-left: -6px;
-}
 
 .modal-close-button {
   position: absolute;
@@ -1708,7 +1705,7 @@ address {
   font-weight: 800;
   line-height: 50px;
   text-align: left;
-  color: rgba(0, 0, 0, 1);
+  color: #000000;
   margin: 0;
   margin-bottom: 42px;
 }
@@ -1741,7 +1738,7 @@ address {
   margin: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 42px;
+  margin-bottom: 39px;
 }
 
 .order-form-name {
@@ -1796,7 +1793,7 @@ address {
   margin: 0;
   padding: 20px 20px;
   border: none;
-  background-color: rgba(240, 240, 240, 1);
+  background-color: #f0f0f0;
   box-sizing: border-box;
 }
 
@@ -1815,11 +1812,11 @@ address {
 
 .fild-mail {
   width: 360px;
-  border: 2px solid rgba(255, 61, 61, 1);
+  border: 2px solid #ff3d3d;
 }
 
 .control-label-warning {
-  color: rgba(255, 61, 61, 1);
+  color: #ff3d3d;
 }
 
 .fild-get {
@@ -1829,7 +1826,7 @@ address {
 .order-form-bottom {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 55px;
+  margin-bottom: 48px;
 }
 
 .order-form-quantity {
@@ -1846,14 +1843,14 @@ address {
   content: "";
   background-image: url("../images/icons/i-icon.svg");
   background-position: center;
-  background-color: rgba(255, 225, 127, 1);
+  background-color: #ffe17f;
   width: 26px;
   height: 26px;
   border-radius: 50%;
   left: 120px;
   bottom: 0;
   background-repeat: no-repeat;
-  fill: rgba(0, 0, 0, 1);
+  fill: #000000;
 }
 
 
@@ -1871,6 +1868,7 @@ address {
   min-width: 60px;
   padding: 20px 20px;
   border: none;
+  background-color: #f0f0f0;
 }
 
 .button-wrapper {
@@ -1891,13 +1889,13 @@ address {
 
 
 
-input[type="number"] {
+.fild-quantity[type="number"] {
   appearance: textfield;
   -moz-appearance: textfield;
 }
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.fild-quantity[type="number"]::-webkit-outer-spin-button,
+.fild-quantity[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
