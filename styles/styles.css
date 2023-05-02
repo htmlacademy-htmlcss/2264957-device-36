@@ -1275,7 +1275,7 @@ outline: none;
 
 .company-list {
   margin: 0;
-  padding: 0 0 25px 0;
+  padding: 0 0 18px 0;
   }
 
 .company-list span {
@@ -1683,10 +1683,6 @@ outline: none;
   box-sizing: border-box;
 }
 
-.modal-content {
-  margin-top: -3px;
-  margin-left: -6px;
-}
 
 .modal-close-button {
   position: absolute;
