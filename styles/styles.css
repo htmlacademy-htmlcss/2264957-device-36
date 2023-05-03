@@ -54,7 +54,7 @@ body {
 
 
 .page-header {
-  background-image: linear-gradient(#ffff 20px, #ffe17f 20px, #ffe17f);
+  background-image: linear-gradient(#ffffff 20px, #ffe17f 20px, #ffe17f);
   width: 1160px;
   margin: 0 auto;
   margin-top: 20px;
@@ -96,7 +96,7 @@ body {
   bottom: 9px;
   left: 1px;
   margin-right: 0 auto;
-  fill: #000;
+  fill: #000000;
 }
 
 
@@ -181,7 +181,7 @@ body {
 
 .button-search:hover {
   background-color: black;
-  color: #fff;
+  color: #ffffff;
 }
 
 .button-search:active {
@@ -227,7 +227,7 @@ outline: none;
   bottom: 12px;
   left: 0;
   margin-right: 0 auto;
-  fill: #000;
+  fill: #000000;
 }
 
 .navigation-link-add {
@@ -249,7 +249,7 @@ outline: none;
   bottom: 12px;
   left: 0;
   margin-right: 0 auto;
-  fill: #000;
+  fill: #000000;
 }
 
 .navigation-top-link:hover {
@@ -375,7 +375,7 @@ outline: none;
   line-height: 21px;
   letter-spacing: 0.2em;
   text-align: center;
-  background-color: #fff;
+  background-color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -406,7 +406,7 @@ outline: none;
 }
 
 .popover-open-button:disabled {
-  background-color: #fff;
+  background-color: #ffffff;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -602,7 +602,7 @@ outline: none;
   height: 20px;
   padding: 5px;
   display: flex;
-  background-color: #fff;
+  background-color: #ffffff;
   border-radius: 50%;
   box-sizing: border-box;
   align-items: center;
@@ -672,7 +672,7 @@ outline: none;
 /* Слайдер */
 
 .popular-goods {
-  background-image: linear-gradient(#ffe17f 150px, #ffff 150px, #ffff);
+  background-image: linear-gradient(#ffe17f 150px, #ffffff 150px, #ffffff);
   margin: -16px auto 70px auto;
 }
 
@@ -931,7 +931,7 @@ outline: none;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
-  color: #fff;
+  color: #ffffff;
   right: 46px;
   top: 80px;
   margin: 0;
@@ -1030,7 +1030,7 @@ outline: none;
 /* Сервис */
 
 .service-wrapper {
-  background-image: linear-gradient(#fff 104px, #f0f0f0 104px, #f0f0f0);
+  background-image: linear-gradient(#ffffff 104px, #f0f0f0 104px, #f0f0f0);
   margin-bottom: 73px;
 }
 
@@ -1325,7 +1325,7 @@ outline: none;
   content: "";
   width: 84px;
   height: 7px;
-  background-color: #000;
+  background-color: #000000;
   margin-bottom: 40px;
 }
 
@@ -1591,7 +1591,7 @@ outline: none;
   position: absolute;
   top: 14px;
   left: 13px;
-  fill: #444;
+  fill: #444444;
 }
 
 .footer-wrapper::before {
@@ -1629,7 +1629,7 @@ outline: none;
 }
 
 .logo-html-academy:hover {
-  fill: #fff;
+  fill: #ffffff;
 }
 
 .logo-html-academy:active {
@@ -1732,7 +1732,7 @@ outline: none;
   border: none;
   min-width: 200px;
   width: fit-content;
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 .order-form-top {
