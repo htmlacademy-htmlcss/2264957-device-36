@@ -508,6 +508,7 @@ outline: none;
 .navigation-bottom {
   position: relative;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   min-width: 231px;
@@ -519,7 +520,7 @@ outline: none;
 .navigation-service {
   display: flex;
   flex-wrap: wrap;
-  min-width: 571px;
+  width: 571px;
   margin: 0 -6px 0 auto;
   justify-content: end;
   align-items: center;
