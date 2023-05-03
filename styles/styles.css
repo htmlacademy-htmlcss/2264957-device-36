@@ -54,7 +54,7 @@ body {
 
 
 .page-header {
-  background-image: linear-gradient(#ffff 20px, #FFE17F 20px, #FFE17F);
+  background-image: linear-gradient(#ffff 20px, #ffe17f 20px, #ffe17f);
   width: 1160px;
   margin: 0 auto;
   margin-top: 20px;
@@ -602,7 +602,7 @@ outline: none;
   height: 20px;
   padding: 5px;
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-radius: 50%;
   box-sizing: border-box;
   align-items: center;
@@ -672,7 +672,7 @@ outline: none;
 /* Слайдер */
 
 .popular-goods {
-  background-image: linear-gradient(#FFE17F 150px, #ffff 150px, #ffff);
+  background-image: linear-gradient(#ffe17f 150px, #ffff 150px, #ffff);
   margin: -16px auto 70px auto;
 }
 
@@ -790,7 +790,7 @@ outline: none;
 }
 
 .help-link:not(.help-link-footer):active::before, .help-link:not(.button-service):active::before {
-  background-color: #FFCC33;
+  background-color: #ffcc33;
   height: 100%;
 }
 
@@ -862,7 +862,7 @@ outline: none;
   background-image: url("../images/slider/arrows.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .slider-button:hover {
@@ -874,7 +874,7 @@ outline: none;
 }
 
 .slider-button:focus {
-  outline-color: #AF4FFF;
+  outline-color: #af4fff;
   outline-offset: 3px;
 }
 
@@ -885,7 +885,7 @@ outline: none;
   height: 12px;
   margin: 0;
   padding: 0;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border: 2px solid #000000;
   border-radius: 50%;
   cursor: pointer;
@@ -895,7 +895,7 @@ outline: none;
 .slider-pagination-button:focus::before {
   position: absolute;
   content: "";
-  border: 2px solid #AF4FFF;
+  border: 2px solid #af4fff;
   width: 16px;
   height: 16px;
   left: 50%;
@@ -931,7 +931,7 @@ outline: none;
   font-weight: 700;
   font-size: 180px;
   line-height: 30px;
-  color: #FFFFFF;
+  color: #fff;
   right: 46px;
   top: 80px;
   margin: 0;
@@ -1030,7 +1030,7 @@ outline: none;
 /* Сервис */
 
 .service-wrapper {
-  background-image: linear-gradient(#fff 104px, #F0F0F0 104px, #F0F0F0);
+  background-image: linear-gradient(#fff 104px, #f0f0f0 104px, #f0f0f0);
   margin-bottom: 73px;
 }
 
@@ -1168,7 +1168,7 @@ outline: none;
   display: block;
   text-align: center;
   margin-top: 35px;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 38px 125px 35px 129px;
   min-height: 100px;
   box-sizing: border-box;
@@ -1190,7 +1190,7 @@ outline: none;
 }
 
 .delivery-button:hover::before {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .delivery-button:hover::after {
@@ -1207,7 +1207,7 @@ outline: none;
   background-image: url("../images/icons/i-icon.svg");
   opacity: 0.3;
   background-position: center;
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1236,7 +1236,7 @@ outline: none;
 }
 
 .service-item-current .help-link {
-  color: #FFE17F;
+  color: #ffe17f;
 }
 
 .service-item-current .help-link::before {
@@ -1363,7 +1363,7 @@ outline: none;
 /* Подписаться */
 
 .subscribe-wrapper {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .subscribe-title {
@@ -1396,7 +1396,7 @@ outline: none;
   padding: 16px 11px;
   width: 100%;
   border: none;
-  border-bottom: 2px solid #C4C4C4;
+  border-bottom: 2px solid #c4c4c4;
 }
 
 .button-subscribe {
@@ -1542,14 +1542,14 @@ outline: none;
 }
 
 .help-link-footer:hover {
-  color: #FFC700;
+  color: #ffc700;
 }
 
 .help-link-footer:hover::after {
   content: "";
   display: block;
   height: 2px;
-  background-color: #FFC700;
+  background-color: #ffc700;
   margin-bottom: 4px;
 }
 
@@ -1581,7 +1581,7 @@ outline: none;
   display: block;
   width: 40px;
   height: 40px;
-  background-color: #B6B4B5;
+  background-color: #b6b4b5;
   background-position: center;
   border-radius: 50%;
   outline: none;
@@ -1600,12 +1600,12 @@ outline: none;
   position: absolute;
   height: 7px;
   width: 80px;
-  background-color: #FFC500;
+  background-color: #ffc500;
   bottom: 40px;
 }
 
 .footer-social-link:hover {
-  background-color: #FFC700;
+  background-color: #ffc700;
 }
 
 .footer-social-link svg:active {
@@ -1625,15 +1625,15 @@ outline: none;
 }
 
 .logo-html-academy {
-  fill: #FFC700;
+  fill: #ffc700;
 }
 
 .logo-html-academy:hover {
-  fill: #FFFFFF;
+  fill: #fff;
 }
 
 .logo-html-academy:active {
-  fill: #B6B4B5;
+  fill: #b6b4b5;
 }
 
 .logo-footer-html:focus {
